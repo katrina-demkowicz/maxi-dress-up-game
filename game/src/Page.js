@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import "./DollStyle.css";
+import Eyes from './Eyes';
 
 class Page extends Component
 {
@@ -26,8 +27,29 @@ class Page extends Component
         };
     }
 
+    updateCharacter = (prop) => (asset)=>
+    {
+        this.setState(prevState => ({
+            dollData: {
+                ...prevState.dollData,
+                [prop]: asset
+            }
+        }));
+    }
+
+    componentDidUpdate(prevState) {
+        if (this.state.dollData !== prevState.dollData) {
+            this.setState({dollData: this.state.dollData});
+        }
+    }
+
     render()
     {
+        if (this.state.dollData === null || this.state.dollData === "")
+        {
+            return(<div><p>no data to render</p></div>)
+        }
+        else {
         return(
             <div>
                 <p>hello.</p>
@@ -51,8 +73,10 @@ class Page extends Component
                 {this.state.dollData.shoes != "" &&
                     <img className="Doll" src={require(`${this.state.dollData.shoes}`)} alt="shoes" />
                 }
+                <Eyes callback={this.updateCharacter}></Eyes>
             </div>
         )
+    }
     }
 }
 
