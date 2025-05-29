@@ -33,7 +33,7 @@ class Eyes extends Component
             <div>
                 {this.state.eyeData.map((eye, i) => {
                     return (
-                        <button key={i} onClick={this.saveChange(eye)}><img src={require(`${eye}`)} alt={eye}></img></button>
+                        <button key={i} onClick={() => this.saveChange(eye)} ><img src={require(`${eye}`)} alt={eye}></img></button>
                     )
                 })}
             </div>
