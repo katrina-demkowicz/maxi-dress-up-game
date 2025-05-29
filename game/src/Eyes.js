@@ -19,10 +19,10 @@ const Eyes = (props) =>
     }
 
     return(
-        <div>
+        <div className="Item-Option">
             {eyes.map((eye, i) => {
                 return (
-                    <button key={i} onClick={() => saveChange(eye)} ><img src={require(`${eye}`)} alt={eye}></img></button>
+                    <img className="Eyes" src={require(`${eye}`)} alt={eye} key={i} onClick={() => saveChange(eye)} ></img>
                 )
             })}
         </div>

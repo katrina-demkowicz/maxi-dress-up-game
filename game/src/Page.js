@@ -36,7 +36,6 @@ function Page()
     else {
         return(
             <div>
-                <p>hello.</p>
                 <img className="Doll" src={require(`${doll.body}`)} alt="body" />
                 <img className="Doll" src={require(`${doll.dress}`)} alt="dress" />
                 <img className="Doll" src={require(`${doll.eyes}`)} alt="eyes" />

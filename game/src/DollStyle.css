@@ -1,4 +1,22 @@
+/* .Doll-Container {
+    
+} */
+
 .Doll {
     position: absolute;
     height: 100%;
+}
+
+.Item-Option {
+    margin-left: 35%;
+}
+
+.Eyes {
+    float: left;
+    height: 125px;
+    width: 125px;
+    object-fit: none;
+    object-position: 58% 13%;
+    transform: scale(33%);
+    border: 2px solid red;
 }
