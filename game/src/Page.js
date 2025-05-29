@@ -20,15 +20,15 @@ function Page()
     });
 
     //update to useState
-    const updateCharacter = (prop, asset) =>
-    {
-        this.setState(prevState => ({
-            dollData: {
-                ...prevState.dollData,
-                [prop]: asset
-            }
-        }));
-    }
+    // const updateCharacter = (prop, asset) =>
+    // {
+    //     this.setState(prevState => ({
+    //         dollData: {
+    //             ...prevState.dollData,
+    //             [prop]: asset
+    //         }
+    //     }));
+    // }
 
     // componentDidUpdate(prevState) {
     //     if (this.state.dollData !== prevState.dollData) {
@@ -37,11 +37,11 @@ function Page()
     // }
 
 
-        if (doll === null || doll === "")
-        {
-            return(<div><p>no data to render</p></div>)
-        }
-        else {
+    if (doll === null || doll === "")
+    {
+        return(<div><p>no data to render</p></div>)
+    }
+    else {
         return(
             <div>
                 <p>hello.</p>
@@ -65,10 +65,11 @@ function Page()
                 {doll.shoes != "" &&
                     <img className="Doll" src={require(`${doll.shoes}`)} alt="shoes" />
                 }
-                {/* <Eyes callback={this.updateCharacter}/> */}
+                {/* callback={this.updateCharacter} */}
+                <Eyes />
             </div>
         )
     }
-    }
+}
 
 export default Page;
