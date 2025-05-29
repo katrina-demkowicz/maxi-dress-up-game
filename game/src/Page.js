@@ -19,23 +19,15 @@ function Page()
         "hair": "./assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG"
     });
 
-    //update to useState
-    // const updateCharacter = (prop, asset) =>
-    // {
-    //     this.setState(prevState => ({
-    //         dollData: {
-    //             ...prevState.dollData,
-    //             [prop]: asset
-    //         }
-    //     }));
-    // }
-
-    // componentDidUpdate(prevState) {
-    //     if (this.state.dollData !== prevState.dollData) {
-    //         this.setState({dollData: this.state.dollData});
-    //     }
-    // }
-
+    const updateCharacter = (prop, asset) =>
+    {
+        setDoll(
+            {
+                ...doll,
+                [prop]: asset
+            }
+        )
+    }
 
     if (doll === null || doll === "")
     {
@@ -65,8 +57,7 @@ function Page()
                 {doll.shoes != "" &&
                     <img className="Doll" src={require(`${doll.shoes}`)} alt="shoes" />
                 }
-                {/* callback={this.updateCharacter} */}
-                <Eyes />
+                <Eyes callback={updateCharacter}/>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 
-const Eyes = () =>
+const Eyes = (props) =>
 {
     const eyes = [
         "./assets/DollParts/Eyes/EyesCosmina.PNG",
@@ -13,16 +13,16 @@ const Eyes = () =>
         "./assets/DollParts/Eyes/EyesUna.PNG"
     ]
 
-    // saveChange = (eye) =>
-    // {
-    //     this.props.callback("eyes", eye);
-    // }
+    const saveChange = (eye) =>
+    {
+        props.callback("eyes", eye);
+    }
 
     return(
         <div>
             {eyes.map((eye, i) => {
                 return (
-                    <button key={i} onClick={() => this.saveChange(eye)} ><img src={require(`${eye}`)} alt={eye}></img></button>
+                    <button key={i} onClick={() => saveChange(eye)} ><img src={require(`${eye}`)} alt={eye}></img></button>
                 )
             })}
         </div>
