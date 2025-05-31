@@ -2,6 +2,7 @@ import { useState } from 'react'
 import "./DollStyle.css";
 import Eyes from './Components/Eyes';
 import Nose from './Components/Nose';
+import Lip from './Components/Lip';
 
 function Page()
 {
@@ -62,6 +63,7 @@ function Page()
                 <div className='Item-Option'>
                     <Eyes callback={updateCharacter}/>
                     <Nose callback={updateCharacter}/>
+                    <Lip callback={updateCharacter}/>
                 </div>
             </div>
         )

@@ -55,3 +55,17 @@
     transform: scale(33%);
     border: 2px solid red;
 }
+
+.Lip-Option {
+    display: flex;
+    width: 600px;
+}
+
+.Lips {
+    height: 125px;
+    width: 125px;
+    object-fit: none;
+    object-position: 49% 16.5%;
+    transform: scale(33%);
+    border: 2px solid red;
+}
