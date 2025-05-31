@@ -1,11 +1,13 @@
 .Game {
     font-size: 0;
+    display: flex;
 }
 
 .Doll-Container {
     width: 225.5px;
     height: 570px;
     border: 2px solid red;
+    position: relative;
 }
 
 .Doll {
@@ -14,6 +16,8 @@
 }
 
 .Item-Option {
+    position: absolute;
+    left: 225.5px;
     width: 600px;
     height: 555px;
     border: 2px solid red;
