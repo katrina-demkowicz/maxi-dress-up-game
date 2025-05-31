@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import "./DollStyle.css";
 import Eyes from './Components/Eyes';
+import Nose from './Components/Nose';
 
 function Page()
 {
@@ -12,11 +13,11 @@ function Page()
         "nose": "/assets/DollParts/Noses/NoseKimiko.PNG",
         "lips": "/assets/DollParts/Lips/Lipsbrown.PNG",
         "faceDetails": "",
-        "glasses": "",
         "necklace": "",
         "dress": "/assets/DollParts/Dresses/Dressstarter.PNG",
         "shoes": "",
-        "hair": "/assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG"
+        "hair": "/assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG",
+        "glasses": ""
     });
 
     const updateCharacter = (prop, asset) =>
@@ -56,7 +57,10 @@ function Page()
                 {doll.shoes != "" &&
                     <img className="Doll" src={doll.shoes} alt="shoes" />
                 }
-                <Eyes callback={updateCharacter}/>
+                <div className='Item-Option'>
+                    <Eyes callback={updateCharacter}/>
+                    <Nose callback={updateCharacter}/>
+                </div>
             </div>
         )
     }

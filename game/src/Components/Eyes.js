@@ -20,11 +20,11 @@ const Eyes = (props) =>
     }
 
     return(
-        <div className="Item-Option">
+        <div className="Eyes-Option">
             {/*The div tag is temporary, I would like to find a better solution to have the images next to 
             each other without there being space inbetween them.*/}
             {eyes.map((eye, i) => {
-                return (<div className='Image'><img className="Eyes" src={eye} alt={eye} key={i} onClick={() => saveChange(eye)} ></img></div>)
+                return (<div className='Image' key={i}><img className="Eyes" src={eye} alt={eye} key={i} onClick={() => saveChange(eye)} ></img></div>)
             })}
         </div>
     )
