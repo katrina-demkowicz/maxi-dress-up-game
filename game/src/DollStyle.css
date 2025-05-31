@@ -2,9 +2,11 @@
     font-size: 0;
 }
 
-/* .Doll-Container {
-    
-} */
+.Doll-Container {
+    width: 225.5px;
+    height: 570px;
+    border: 2px solid red;
+}
 
 .Doll {
     position: absolute;
@@ -12,10 +14,9 @@
 }
 
 .Item-Option {
-    display: flex;
-    margin-left: 275px;
     width: 600px;
-    height: 600px;
+    height: 555px;
+    border: 2px solid red;
 }
 
 .Image {
