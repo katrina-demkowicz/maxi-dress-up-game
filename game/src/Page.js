@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import "./DollStyle.css";
-import Eyes from './Eyes';
+import Eyes from './Components/Eyes';
 
 function Page()
 {
@@ -35,7 +35,7 @@ function Page()
     }
     else {
         return(
-            <div>
+            <div className='Game'>
                 <img className="Doll" src={require(`${doll.body}`)} alt="body" />
                 <img className="Doll" src={require(`${doll.dress}`)} alt="dress" />
                 <img className="Doll" src={require(`${doll.eyes}`)} alt="eyes" />

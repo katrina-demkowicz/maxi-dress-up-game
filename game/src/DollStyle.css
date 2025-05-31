@@ -1,3 +1,7 @@
+.Game {
+    font-size: 0;
+}
+
 /* .Doll-Container {
     
 } */
@@ -8,11 +12,19 @@
 }
 
 .Item-Option {
-    margin-left: 35%;
+    display: flex;
+    margin-left: 275px;
+    width: 600px;
+    height: 600px;
+}
+
+.Image {
+    width: 42.57px;
+    height: 42.57px;
 }
 
 .Eyes {
-    float: left;
+    flex: left;
     height: 125px;
     width: 125px;
     object-fit: none;
