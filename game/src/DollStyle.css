@@ -1,0 +1,71 @@
+.Game {
+    font-size: 0;
+    display: flex;
+}
+
+.Doll-Container {
+    width: 281.575px;
+    height: 712.5px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.Doll {
+    position: absolute;
+    height: 100%;
+}
+
+.Item-Option {
+    position: absolute;
+    left: 283.575px;
+    width: 800px;
+    height: 700px;
+    border: 2px solid red;
+}
+
+.Image {
+    width: 57.69px;
+    height: 57.69px;
+}
+
+.Eyes-Option {
+    display: flex;
+    width: 600px;
+}
+
+.Eyes {
+    height: 125px;
+    width: 125px;
+    object-fit: none;
+    object-position: 58% 13%;
+    transform: scale(40%);
+    border: 2px solid red;
+}
+
+.Nose-Option {
+    display: flex;
+    width: 600px;
+}
+
+.Noses {
+    height: 125px;
+    width: 125px;
+    object-fit: none;
+    object-position: 49% 14%;
+    transform: scale(40%);
+    border: 2px solid red;
+}
+
+.Lip-Option {
+    display: flex;
+    width: 600px;
+}
+
+.Lips {
+    height: 125px;
+    width: 125px;
+    object-fit: none;
+    object-position: 49% 16.5%;
+    transform: scale(40%);
+    border: 2px solid red;
+}
