@@ -8,7 +8,7 @@ function Page()
 {
 
     const [doll, setDoll]= useState({
-        "body": PUBLIC_URL + "/assets/DollParts/Body/Skin5.PNG",
+        "body": "/assets/DollParts/Body/Skin5.PNG",
         "eyes": "/assets/DollParts/Eyes/EyesKimiko.PNG",
         "brows": "/assets/DollParts/Eyebrows/BrowsLydia.PNG",
         "nose": "/assets/DollParts/Noses/NoseKimiko.PNG",
