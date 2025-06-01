@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/maxi-dress-up-game/static/css/main.e0e86a63.css",
+    "main.js": "/maxi-dress-up-game/static/js/main.b51ddb31.js",
+    "static/js/453.a5a72b74.chunk.js": "/maxi-dress-up-game/static/js/453.a5a72b74.chunk.js",
+    "static/media/logo.svg": "/maxi-dress-up-game/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/maxi-dress-up-game/index.html",
+    "main.e0e86a63.css.map": "/maxi-dress-up-game/static/css/main.e0e86a63.css.map",
+    "main.b51ddb31.js.map": "/maxi-dress-up-game/static/js/main.b51ddb31.js.map",
+    "453.a5a72b74.chunk.js.map": "/maxi-dress-up-game/static/js/453.a5a72b74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0e86a63.css",
+    "static/js/main.b51ddb31.js"
+  ]
+}
