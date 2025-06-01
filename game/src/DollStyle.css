@@ -69,3 +69,17 @@
     transform: scale(40%);
     border: 2px solid red;
 }
+
+.Brow-Option {
+    display: flex;
+    width: 600px;
+}
+
+.Brows {
+    height: 125px;
+    width: 125px;
+    object-fit: none;
+    object-position: 57% 10.5%;
+    transform: scale(40%);
+    border: 2px solid red;
+}
