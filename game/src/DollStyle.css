@@ -83,3 +83,22 @@
     transform: scale(40%);
     border: 2px solid red;
 }
+
+.FaceDetail-Image {
+    width: 57.69px;
+    height: 57.69px;
+}
+
+.FaceDetail-Option {
+    display: flex;
+    width: 600px;
+}
+
+.FaceDetails {
+    height: 250px;
+    width: 250px;
+    object-fit: none;
+    object-position: 49.5% 12%;
+    transform: scale(20.26%);
+    border: 2px solid red;
+}
