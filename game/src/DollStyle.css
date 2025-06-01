@@ -4,8 +4,8 @@
 }
 
 .Doll-Container {
-    width: 225.5px;
-    height: 570px;
+    width: 281.575px;
+    height: 712.5px;
     border: 2px solid red;
     position: relative;
 }
@@ -17,15 +17,15 @@
 
 .Item-Option {
     position: absolute;
-    left: 225.5px;
-    width: 600px;
-    height: 555px;
+    left: 283.575px;
+    width: 800px;
+    height: 700px;
     border: 2px solid red;
 }
 
 .Image {
-    width: 42.57px;
-    height: 42.57px;
+    width: 57.69px;
+    height: 57.69px;
 }
 
 .Eyes-Option {
@@ -38,7 +38,7 @@
     width: 125px;
     object-fit: none;
     object-position: 58% 13%;
-    transform: scale(33%);
+    transform: scale(40%);
     border: 2px solid red;
 }
 
@@ -52,7 +52,7 @@
     width: 125px;
     object-fit: none;
     object-position: 49% 14%;
-    transform: scale(33%);
+    transform: scale(40%);
     border: 2px solid red;
 }
 
@@ -66,6 +66,6 @@
     width: 125px;
     object-fit: none;
     object-position: 49% 16.5%;
-    transform: scale(33%);
+    transform: scale(40%);
     border: 2px solid red;
 }

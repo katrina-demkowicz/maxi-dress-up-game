@@ -7,7 +7,7 @@ const Lip = (props) =>
         "/assets/DollParts/Lips/Lipsbrown.PNG",
         "/assets/DollParts/Lips/Lipsdarkbrown.PNG",
         "/assets/DollParts/Lips/Lipshotpink.PNG",
-        "/assets/DollParts/Lips/Liplightpink.PNG",
+        "/assets/DollParts/Lips/Lipslightpink.PNG",
         "/assets/DollParts/Lips/Lipsorange.PNG",
         "/assets/DollParts/Lips/Lipspurple.PNG",
         "/assets/DollParts/Lips/Lipsred.PNG",
