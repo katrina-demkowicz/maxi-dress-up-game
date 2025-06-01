@@ -3,6 +3,7 @@ import "./DollStyle.css";
 import Eyes from './Components/Eyes';
 import Nose from './Components/Nose';
 import Lip from './Components/Lip';
+import Brow from './Components/Brows';
 
 function Page()
 {
@@ -61,6 +62,7 @@ function Page()
                         }
                 </div>
                 <div className='Item-Option'>
+                    <Brow callback={updateCharacter}/>
                     <Eyes callback={updateCharacter}/>
                     <Nose callback={updateCharacter}/>
                     <Lip callback={updateCharacter}/>
