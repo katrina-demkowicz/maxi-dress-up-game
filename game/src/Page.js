@@ -3,13 +3,12 @@ import "./DollStyle.css";
 import Eyes from './Components/Eyes';
 import Nose from './Components/Nose';
 import Lip from './Components/Lip';
-import Brow from './Components/Brows';
 
 function Page()
 {
 
     const [doll, setDoll]= useState({
-        "body": "/assets/DollParts/Body/Skin5.PNG",
+        "body": PUBLIC_URL + "/assets/DollParts/Body/Skin5.PNG",
         "eyes": "/assets/DollParts/Eyes/EyesKimiko.PNG",
         "brows": "/assets/DollParts/Eyebrows/BrowsLydia.PNG",
         "nose": "/assets/DollParts/Noses/NoseKimiko.PNG",
@@ -62,7 +61,6 @@ function Page()
                         }
                 </div>
                 <div className='Item-Option'>
-                    <Brow callback={updateCharacter}/>
                     <Eyes callback={updateCharacter}/>
                     <Nose callback={updateCharacter}/>
                     <Lip callback={updateCharacter}/>
