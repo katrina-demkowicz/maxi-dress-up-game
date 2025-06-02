@@ -89,7 +89,10 @@
     height: 57.69px;
 }
 
+/* to have details line up with the rest of the sets, hardcode margin.
+will find a better solution */
 .FaceDetail-Option {
+    margin-left: -62px ;
     display: flex;
     width: 600px;
 }
