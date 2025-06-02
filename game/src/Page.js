@@ -5,6 +5,7 @@ import Nose from './Components/Nose';
 import Lip from './Components/Lip';
 import Brow from './Components/Brows';
 import FaceDetail from './Components/FaceDetail';
+import Tone from './Components/Tone';
 
 function Page()
 {
@@ -68,6 +69,7 @@ function Page()
                     <Nose callback={updateCharacter}/>
                     <Lip callback={updateCharacter}/>
                     <FaceDetail callback={updateCharacter}/>
+                    <Tone callback={updateCharacter}/>
                 </div>
             </div>
         )

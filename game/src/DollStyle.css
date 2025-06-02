@@ -90,7 +90,8 @@
 }
 
 /* to have details line up with the rest of the sets, hardcode margin.
-will find a better solution */
+will find a better solution.
+maybe i can make this set overall larger view */
 .FaceDetail-Option {
     margin-left: -62px ;
     display: flex;
@@ -103,5 +104,22 @@ will find a better solution */
     object-fit: none;
     object-position: 49.5% 12%;
     transform: scale(20.26%);
+    border: 2px solid red;
+}
+
+.Tone-Image {
+    width: 38.25px;
+    height: 38.25px;
+}
+
+.Tone-Option {
+    margin-left: -9px;
+    margin-top: 100px;
+    display: flex;
+    width: 600px;
+}
+
+.Tones {
+    transform: scale(-25%);
     border: 2px solid red;
 }
