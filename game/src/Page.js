@@ -1,11 +1,6 @@
 import { useState } from 'react'
 import "./DollStyle.css";
-import Eyes from './Components/Eyes';
-import Nose from './Components/Nose';
-import Lip from './Components/Lip';
-import Brow from './Components/Brows';
-import FaceDetail from './Components/FaceDetail';
-import Tone from './Components/Tone';
+import Selection from './Components/Selection';
 
 function Page()
 {
@@ -63,14 +58,7 @@ function Page()
                             <img className="Doll" src={doll.shoes} alt="shoes" />
                         }
                 </div>
-                <div className='Item-Option'>
-                    <Brow callback={updateCharacter}/>
-                    <Eyes callback={updateCharacter}/>
-                    <Nose callback={updateCharacter}/>
-                    <Lip callback={updateCharacter}/>
-                    <FaceDetail callback={updateCharacter}/>
-                    <Tone callback={updateCharacter}/>
-                </div>
+                <Selection callback={updateCharacter}/>
             </div>
         )
     }
