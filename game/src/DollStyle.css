@@ -127,3 +127,33 @@ maybe i can make this set overall larger view */
 .Selection-Button-Container {
     display: flex;
 }
+
+.Dress-Option {
+    display: flex;
+}
+
+.Dress {
+    height: 550px;
+}
+
+.Hair-Option {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    border: 2px solid red;
+}
+
+.Hair-Image {
+    height: 132.43px;
+    width: 132.43px;
+}
+
+.Hair {
+    height: 775px;
+    width: 775px;
+    object-fit: none;
+    object-position: 45% 1%;
+    transform: scale(17%);
+    transform-origin: top left;
+    border: 2px solid red;
+}

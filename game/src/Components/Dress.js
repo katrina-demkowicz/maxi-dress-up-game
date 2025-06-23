@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 const Dress = (props) =>
 {
     const dresses = [
@@ -40,16 +41,16 @@ const Dress = (props) =>
     return(
         <div>
             {page == 0 && 
-                <div>
+                <div className='Dress-Option'>
                     {dresses[0].map((dress, i) => {
-                        return (<div ><img src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
+                        return (<div><img className='Dress' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
                     })}
                 </div>
             }
             {page == 1 && 
-                <div>
+                <div className='Dress-Option'>
                     {dresses[1].map((dress, i) => {
-                        return (<div ><img src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
+                        return (<div><img className='Dress' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
                     })}
                 </div>
             }

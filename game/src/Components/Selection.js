@@ -7,6 +7,7 @@ import FaceDetail from './FaceDetail';
 import Tone from './Tone';
 import SelectionButton from './SelectionButtons';
 import Dress from './Dress';
+import Hair from './Hair';
 
 const Selection = (props) =>
 {
@@ -30,7 +31,7 @@ const Selection = (props) =>
     return(
 
         <div className='Item-Option'>
-            <div className="Selection-Button-Container">
+            <div className='Selection-Button-Container'>
                 {buttons.map((button, i) => {
                     return (<SelectionButton name={button} callback={() => updateSelection(button)} />)
                 })}
@@ -43,6 +44,11 @@ const Selection = (props) =>
                     <Lip callback={updateCharacter}/>
                     <FaceDetail callback={updateCharacter}/>
                     <Tone callback={updateCharacter}/>
+                </div>
+            }
+            {selection == "Hair" && 
+                <div>
+                    <Hair callback={updateCharacter}/>
                 </div>
             }
             {selection == "Dresses" && 
