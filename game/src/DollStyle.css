@@ -123,3 +123,7 @@ maybe i can make this set overall larger view */
     transform: scale(-25%);
     border: 2px solid red;
 }
+
+.Selection-Button-Container {
+    display: flex;
+}
