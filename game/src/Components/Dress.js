@@ -19,11 +19,18 @@ const Dress = (props) =>
         ],
         [
             "/assets/DollParts/Dresses/Dressgreen.PNG",
+            "/assets/DollParts/Dresses/Dressiceblueasymmetrical.PNG",
+            "/assets/DollParts/Dresses/Dressbluelace.PNG",
+            "/assets/DollParts/Dresses/Dressblackfloral.PNG",
+            "/assets/DollParts/Dresses/Dress80sruffle.PNG",
+            "/assets/DollParts/Dresses/Dress80sgreen.PNG",
+            
         ],
         [
             "/assets/DollParts/Dresses/Dressblackmaxisheer.PNG",
             "/assets/DollParts/Dresses/Dressredvelvetgoth.PNG",
-            "/assets/DollParts/Dresses/Dressdarkblueroses.PNG"
+            "/assets/DollParts/Dresses/Dressdarkblueroses.PNG",
+            "/assets/DollParts/Dresses/Dress70sdaisy.PNG"
         ]
     ]
     //useState for dress pages, each page with a list of dress
@@ -66,7 +73,15 @@ const Dress = (props) =>
             {page == 1 && 
                 <div className='Dress-Option'>
                     {dresses[1].map((dress, i) => {
-                        return (<div className='Medium-Dress-Image'><img className='Medium-Dress' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
+                        if (dress == "/assets/DollParts/Dresses/Dress80sruffle.PNG") {
+                            return (<div className='Short-Dress-Image'><img className='Eighties-Ruffle' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
+                        }
+                        else if (dress == "/assets/DollParts/Dresses/Dress80sgreen.PNG") {
+                            return (<div className='Short-Dress-Image'><img className='Eighties-Green' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
+                        }
+                        else {
+                            return (<div className='Medium-Dress-Image'><img className='Medium-Dress' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
+                        }
                     })}
                 </div>
             }

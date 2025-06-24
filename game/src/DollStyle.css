@@ -149,13 +149,40 @@ maybe i can make this set overall larger view */
 }
 
 .Medium-Dress {
-    height: 990px;
-    width: 400px;
+    height: 1200px;
+    width: 460px;
     object-fit: none;
-    object-position: 49% 39%;
+    object-position: 49% 48%;
     transform: scale(25%);
     transform-origin: top left;
     border: 2px solid red;
+}
+
+.Eighties-Ruffle {
+    height: 980px;
+    width: 750px;
+    object-fit: none;
+    object-position: 49% 45%;
+    transform: scale(25%);
+    transform-origin: top left;
+    margin-left: -35px;
+    border: 2px solid red;
+}
+
+.Eighties-Green {
+    height: 1350px;
+    width: 550px;
+    object-fit: none;
+    object-position: 49% 51%;
+    transform: scale(25%);
+    transform-origin: top left;
+    margin-left: 110px;
+    border: 2px solid red;
+}
+
+.Medium-Dress-Image {
+    height: 325px;
+    width: 250px;
 }
 
 .Long-Narrow-Dress {
@@ -166,11 +193,6 @@ maybe i can make this set overall larger view */
     transform: scale(25%);
     transform-origin: top left;
     border: 2px solid red;
-}
-
-.Medium-Dress-Image {
-    height: 300px;
-    width: 175px;
 }
 
 .Long-Narrow-Dress-Image {
