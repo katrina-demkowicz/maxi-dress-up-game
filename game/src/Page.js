@@ -48,6 +48,7 @@ function Page()
                         {doll.faceDetails != "" &&
                             <img className="Doll" src={doll.faceDetails} alt="face details" />
                         }
+                        <img className="Doll" src={doll.hair} alt="hair" />
                         {doll.glasses != "" &&
                             <img className="Doll" src={doll.glasses} alt="glasses" />
                         }

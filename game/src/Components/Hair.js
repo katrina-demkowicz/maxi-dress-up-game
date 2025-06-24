@@ -68,6 +68,50 @@ const Hair = (props) =>
             "/assets/DollParts/Hair/TheThelma/Thelmaolive.PNG",
             "/assets/DollParts/Hair/TheVera/Veraolive.PNG",
             "/assets/DollParts/Hair/TheYukari/YukariOlive.PNG"
+        ],
+        "Red": [
+            "/assets/DollParts/Hair/TheAlice/AliceGinger.PNG",
+            "/assets/DollParts/Hair/TheAyumi/AyumiGinger.PNG",
+            "/assets/DollParts/Hair/TheButterfly/Butterflyginger.PNG",
+            "/assets/DollParts/Hair/TheCelesta/CelestaGinger.PNG",
+            "/assets/DollParts/Hair/TheCloud/CloudGinger.PNG",
+            "/assets/DollParts/Hair/TheCosmina/Cosminaginger.PNG",
+            "/assets/DollParts/Hair/TheDonna/Donnaginger.PNG",
+            "/assets/DollParts/Hair/TheHestia/HestiaGinger.PNG",
+            "/assets/DollParts/Hair/TheImogen/ImogenGinger.PNG",
+            "/assets/DollParts/Hair/TheIrina/IrinaGinger.PNG",
+            "/assets/DollParts/Hair/TheKimiko/Kimikoginger.PNG",
+            "/assets/DollParts/Hair/TheLacramioara/LacramioaraGinger.PNG",
+            "/assets/DollParts/Hair/TheLavender/Lavenderginger.PNG",
+            "/assets/DollParts/Hair/TheLeopard/Leopardginger.PNG",
+            "/assets/DollParts/Hair/TheLydia/LydiaGinger.PNG",
+            "/assets/DollParts/Hair/TheMagdalena/Magdalenaginger.PNG",
+            "/assets/DollParts/Hair/TheSonya/Sonyaginger.PNG",
+            "/assets/DollParts/Hair/TheThelma/Thelmaginger.PNG",
+            "/assets/DollParts/Hair/TheVera/Veraginger.PNG",
+            "/assets/DollParts/Hair/TheYukari/YukariGinger.PNG"
+        ],
+        "Blonde": [
+            "/assets/DollParts/Hair/TheAlice/Aliceblonde.PNG",
+            "/assets/DollParts/Hair/TheAyumi/Ayumiblonde.PNG",
+            "/assets/DollParts/Hair/TheButterfly/Butterflyblonde.PNG",
+            "/assets/DollParts/Hair/TheCelesta/CelestaBlonde.PNG",
+            "/assets/DollParts/Hair/TheCloud/CloudBlonde.PNG",
+            "/assets/DollParts/Hair/TheCosmina/Cosminablonde.PNG",
+            "/assets/DollParts/Hair/TheDonna/Donnablonde.PNG",
+            "/assets/DollParts/Hair/TheHestia/HestiaBlonde.PNG",
+            "/assets/DollParts/Hair/TheImogen/ImogenBlonde.PNG",
+            "/assets/DollParts/Hair/TheIrina/IrinaBlonde.PNG",
+            "/assets/DollParts/Hair/TheKimiko/Kimikoblonde.PNG",
+            "/assets/DollParts/Hair/TheLacramioara/LacramioaraBlonde.PNG",
+            "/assets/DollParts/Hair/TheLavender/Lavenderblonde.PNG",
+            "/assets/DollParts/Hair/TheLeopard/Leopardblonde.PNG",
+            "/assets/DollParts/Hair/TheLydia/LydiaBlonde.PNG",
+            "/assets/DollParts/Hair/TheMagdalena/Magdalenablonde.PNG",
+            "/assets/DollParts/Hair/TheSonya/Sonyablonde.PNG",
+            "/assets/DollParts/Hair/TheThelma/Thelmablonde.PNG",
+            "/assets/DollParts/Hair/TheVera/Verablonde.PNG",
+            "/assets/DollParts/Hair/TheYukari/YukariBlonde.PNG"
         ]
     }
 
@@ -106,6 +150,22 @@ const Hair = (props) =>
             {color == "Olive" && 
                 <div className='Hair-Option'>
                     {styles["Olive"].map((style, i) => {
+                        return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
+                    }
+                )}
+                </div>
+            }
+            {color == "Red" && 
+                <div className='Hair-Option'>
+                    {styles["Red"].map((style, i) => {
+                        return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
+                    }
+                )}
+                </div>
+            }
+            {color == "Blonde" && 
+                <div className='Hair-Option'>
+                    {styles["Blonde"].map((style, i) => {
                         return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
                     }
                 )}

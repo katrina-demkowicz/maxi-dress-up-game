@@ -130,10 +130,52 @@ maybe i can make this set overall larger view */
 
 .Dress-Option {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.Dress {
-    height: 550px;
+.Short-Dress {
+    height: 1000px;
+    width: 410px;
+    object-fit: none;
+    object-position: 49% 36%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Short-Dress-Image {
+    height: 270px;
+    width: 130px;
+}
+
+.Medium-Dress {
+    height: 990px;
+    width: 400px;
+    object-fit: none;
+    object-position: 49% 39%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Long-Narrow-Dress {
+    height: 990px;
+    width: 400px;
+    object-fit: none;
+    object-position: 49% 39%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Medium-Dress-Image {
+    height: 300px;
+    width: 175px;
+}
+
+.Long-Narrow-Dress-Image {
+    height: 300px;
+    width: 175px;
 }
 
 .Hair-Option {
