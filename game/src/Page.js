@@ -38,6 +38,9 @@ function Page()
             <div className='Game'>
                 <div className='Doll-Container'>
                     <img className="Doll" src={doll.body} alt="body" />
+                        {doll.shoes !== "" &&
+                            <img className="Doll" src={doll.shoes} alt="shoes" />
+                        }
                         <img className="Doll" src={doll.dress} alt="dress" />
                         <img className="Doll" src={doll.eyes} alt="eyes" />
                         <img className="Doll" src={doll.brows} alt="brows" />
@@ -45,19 +48,16 @@ function Page()
                         <img className="Doll" src={doll.lips} alt="lips" />
                         <img className="Doll" src={doll.hair} alt="hair" />
                         {/* empty string attributes */}
-                        {doll.faceDetails != "" &&
+                        {doll.faceDetails !== "" &&
                             <img className="Doll" src={doll.faceDetails} alt="face details" />
                         }
                         <img className="Doll" src={doll.hair} alt="hair" />
-                        {doll.glasses != "" &&
+                        {doll.glasses !== "" &&
                             <img className="Doll" src={doll.glasses} alt="glasses" />
                         }
-                        {doll.necklace != "" &&
+                        {doll.necklace !== "" &&
                             <img className="Doll" src={doll.necklace} alt="necklace" />
-                        }
-                        {doll.shoes != "" &&
-                            <img className="Doll" src={doll.shoes} alt="shoes" />
-                        }
+                        }  
                 </div>
                 <Selection callback={updateCharacter}/>
             </div>

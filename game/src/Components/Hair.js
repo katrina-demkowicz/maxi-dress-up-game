@@ -118,7 +118,7 @@ const Hair = (props) =>
     const [color, setColor] = useState("Brown")
 
     const changeColor = (newColor) => {
-        if (newColor != color)
+        if (newColor !== color)
         {
             setColor(newColor)
         }
@@ -131,7 +131,7 @@ const Hair = (props) =>
 
     return(
         <div>
-            {color == "Black" && 
+            {color === "Black" && 
                 <div className='Hair-Option'>
                     {styles["Black"].map((style, i) => {
                         return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
@@ -139,7 +139,7 @@ const Hair = (props) =>
                 )}
                 </div>
             }
-            {color == "Brown" && 
+            {color === "Brown" && 
                 <div className='Hair-Option'>
                     {styles["Brown"].map((style, i) => {
                         return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
@@ -147,7 +147,7 @@ const Hair = (props) =>
                 )}
                 </div>
             }
-            {color == "Olive" && 
+            {color === "Olive" && 
                 <div className='Hair-Option'>
                     {styles["Olive"].map((style, i) => {
                         return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
@@ -155,7 +155,7 @@ const Hair = (props) =>
                 )}
                 </div>
             }
-            {color == "Red" && 
+            {color === "Red" && 
                 <div className='Hair-Option'>
                     {styles["Red"].map((style, i) => {
                         return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)
@@ -163,7 +163,7 @@ const Hair = (props) =>
                 )}
                 </div>
             }
-            {color == "Blonde" && 
+            {color === "Blonde" && 
                 <div className='Hair-Option'>
                     {styles["Blonde"].map((style, i) => {
                         return(<div className='Hair-Image'><img className='Hair' src={style} alt={style} key={i} onClick={() => saveChange(style)} ></img></div>)

@@ -186,18 +186,18 @@ maybe i can make this set overall larger view */
 }
 
 .Long-Narrow-Dress {
-    height: 990px;
-    width: 400px;
+    height: 1600px;
+    width: 570px;
     object-fit: none;
-    object-position: 49% 39%;
-    transform: scale(25%);
+    object-position: 49% 63%;
+    transform: scale(23%);
     transform-origin: top left;
     border: 2px solid red;
 }
 
 .Long-Narrow-Dress-Image {
-    height: 300px;
-    width: 175px;
+    height: 500px;
+    width: 133px;
 }
 
 .Hair-Option {
@@ -221,3 +221,40 @@ maybe i can make this set overall larger view */
     transform-origin: top left;
     border: 2px solid red;
 }
+
+.Shoe-Option {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tall-Boot {
+    height: 750px;
+    width: 410px;
+    object-fit: none;
+    object-position: 49% 95%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Tall-Boot-Image {
+    height: 270px;
+    width: 130px;
+}
+
+.Short-Shoe {
+    height: 400px;
+    width: 410px;
+    object-fit: none;
+    object-position: 49% 97%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Short-Shoe-Image {
+    height: 270px;
+    width: 130px;
+}
+
+

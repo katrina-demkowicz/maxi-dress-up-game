@@ -8,13 +8,15 @@ import Tone from './Tone';
 import SelectionButton from './SelectionButtons';
 import Dress from './Dress';
 import Hair from './Hair';
+import Shoe from './Shoe';
 
 const Selection = (props) =>
 {
     const buttons = [
         "Face",
         "Hair",
-        "Dresses"
+        "Dresses",
+        "Shoes"
     ]
 
     const [selection, setSelection] = useState("Face")
@@ -36,7 +38,7 @@ const Selection = (props) =>
                     return (<SelectionButton name={button} callback={() => updateSelection(button)} />)
                 })}
             </div>
-            {selection == "Face" && 
+            {selection === "Face" && 
                 <div>
                     <Brow callback={updateCharacter}/>
                     <Eyes callback={updateCharacter}/>
@@ -46,14 +48,19 @@ const Selection = (props) =>
                     <Tone callback={updateCharacter}/>
                 </div>
             }
-            {selection == "Hair" && 
+            {selection === "Hair" && 
                 <div>
                     <Hair callback={updateCharacter}/>
                 </div>
             }
-            {selection == "Dresses" && 
+            {selection === "Dresses" && 
                 <div>
                     <Dress callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Shoes" &&
+                <div>
+                    <Shoe callback={updateCharacter}/>
                 </div>
             }
         </div>
