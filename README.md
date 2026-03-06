@@ -1,2 +1,2 @@
-Link to dress up game! [text](https://katrina-demkowicz.github.io/maxi-dress-up-game/)
+Link to dress up game! [https://katrina-demkowicz.github.io/maxi-dress-up-game/](https://katrina-demkowicz.github.io/maxi-dress-up-game/)  
 Have fun <3
