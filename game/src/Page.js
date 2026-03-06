@@ -1,11 +1,6 @@
 import { useState } from 'react'
 import "./DollStyle.css";
-import Eyes from './Components/Eyes';
-import Nose from './Components/Nose';
-import Lip from './Components/Lip';
-import Brow from './Components/Brows';
-import FaceDetail from './Components/FaceDetail';
-import Tone from './Components/Tone';
+import Selection from './Components/Selection';
 
 function Page()
 {
@@ -43,6 +38,9 @@ function Page()
             <div className='Game'>
                 <div className='Doll-Container'>
                     <img className="Doll" src={doll.body} alt="body" />
+                        {doll.shoes !== "" &&
+                            <img className="Doll" src={doll.shoes} alt="shoes" />
+                        }
                         <img className="Doll" src={doll.dress} alt="dress" />
                         <img className="Doll" src={doll.eyes} alt="eyes" />
                         <img className="Doll" src={doll.brows} alt="brows" />
@@ -50,27 +48,18 @@ function Page()
                         <img className="Doll" src={doll.lips} alt="lips" />
                         <img className="Doll" src={doll.hair} alt="hair" />
                         {/* empty string attributes */}
-                        {doll.faceDetails != "" &&
+                        {doll.faceDetails !== "" &&
                             <img className="Doll" src={doll.faceDetails} alt="face details" />
                         }
-                        {doll.glasses != "" &&
+                        <img className="Doll" src={doll.hair} alt="hair" />
+                        {doll.glasses !== "" &&
                             <img className="Doll" src={doll.glasses} alt="glasses" />
                         }
-                        {doll.necklace != "" &&
+                        {doll.necklace !== "" &&
                             <img className="Doll" src={doll.necklace} alt="necklace" />
-                        }
-                        {doll.shoes != "" &&
-                            <img className="Doll" src={doll.shoes} alt="shoes" />
-                        }
+                        }  
                 </div>
-                <div className='Item-Option'>
-                    <Brow callback={updateCharacter}/>
-                    <Eyes callback={updateCharacter}/>
-                    <Nose callback={updateCharacter}/>
-                    <Lip callback={updateCharacter}/>
-                    <FaceDetail callback={updateCharacter}/>
-                    <Tone callback={updateCharacter}/>
-                </div>
+                <Selection callback={updateCharacter}/>
             </div>
         )
     }

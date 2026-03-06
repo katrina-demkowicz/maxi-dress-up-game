@@ -123,3 +123,138 @@ maybe i can make this set overall larger view */
     transform: scale(-25%);
     border: 2px solid red;
 }
+
+.Selection-Button-Container {
+    display: flex;
+}
+
+.Dress-Option {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Short-Dress {
+    height: 1000px;
+    width: 410px;
+    object-fit: none;
+    object-position: 49% 36%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Short-Dress-Image {
+    height: 270px;
+    width: 130px;
+}
+
+.Medium-Dress {
+    height: 1200px;
+    width: 460px;
+    object-fit: none;
+    object-position: 49% 48%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Eighties-Ruffle {
+    height: 980px;
+    width: 750px;
+    object-fit: none;
+    object-position: 49% 45%;
+    transform: scale(25%);
+    transform-origin: top left;
+    margin-left: -35px;
+    border: 2px solid red;
+}
+
+.Eighties-Green {
+    height: 1350px;
+    width: 550px;
+    object-fit: none;
+    object-position: 49% 51%;
+    transform: scale(25%);
+    transform-origin: top left;
+    margin-left: 110px;
+    border: 2px solid red;
+}
+
+.Medium-Dress-Image {
+    height: 325px;
+    width: 250px;
+}
+
+.Long-Narrow-Dress {
+    height: 1600px;
+    width: 570px;
+    object-fit: none;
+    object-position: 49% 63%;
+    transform: scale(23%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Long-Narrow-Dress-Image {
+    height: 500px;
+    width: 133px;
+}
+
+.Hair-Option {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    border: 2px solid red;
+}
+
+.Hair-Image {
+    height: 132.43px;
+    width: 132.43px;
+}
+
+.Hair {
+    height: 775px;
+    width: 775px;
+    object-fit: none;
+    object-position: 45% 1%;
+    transform: scale(17%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Shoe-Option {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tall-Boot {
+    height: 750px;
+    width: 410px;
+    object-fit: none;
+    object-position: 49% 95%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Tall-Boot-Image {
+    height: 270px;
+    width: 130px;
+}
+
+.Short-Shoe {
+    height: 400px;
+    width: 410px;
+    object-fit: none;
+    object-position: 49% 97%;
+    transform: scale(25%);
+    transform-origin: top left;
+    border: 2px solid red;
+}
+
+.Short-Shoe-Image {
+    height: 270px;
+    width: 130px;
+}
+
+
