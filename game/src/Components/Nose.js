@@ -3,15 +3,15 @@ const Nose = (props) =>
 {
 
     const noses = [
-        "/assets/DollParts/Noses/NoseBig.PNG",
-        "/assets/DollParts/Noses/NoseButton.PNG",
-        "/assets/DollParts/Noses/NoseGorillaz.PNG",
-        "/assets/DollParts/Noses/NoseKimiko.PNG",
-        "/assets/DollParts/Noses/NoseLakshmi.PNG",
-        "/assets/DollParts/Noses/NoseLong.PNG",
-        "/assets/DollParts/Noses/NoseLydia.PNG",
-        "/assets/DollParts/Noses/NoseSmall.PNG",
-        "/assets/DollParts/Noses/NoseSonya.PNG"
+        "assets/DollParts/Noses/NoseBig.PNG",
+        "assets/DollParts/Noses/NoseButton.PNG",
+        "assets/DollParts/Noses/NoseGorillaz.PNG",
+        "assets/DollParts/Noses/NoseKimiko.PNG",
+        "assets/DollParts/Noses/NoseLakshmi.PNG",
+        "assets/DollParts/Noses/NoseLong.PNG",
+        "assets/DollParts/Noses/NoseLydia.PNG",
+        "assets/DollParts/Noses/NoseSmall.PNG",
+        "assets/DollParts/Noses/NoseSonya.PNG"
     ]
 
     const saveChange = (nose) =>

@@ -6,16 +6,16 @@ function Page()
 {
 
     const [doll, setDoll]= useState({
-        "body": "/assets/DollParts/Body/Skin5.PNG",
-        "eyes": "/assets/DollParts/Eyes/EyesKimiko.PNG",
-        "brows": "/assets/DollParts/Eyebrows/BrowsLydia.PNG",
-        "nose": "/assets/DollParts/Noses/NoseKimiko.PNG",
-        "lips": "/assets/DollParts/Lips/Lipsbrown.PNG",
+        "body": "assets/DollParts/Body/Skin5.PNG",
+        "eyes": "assets/DollParts/Eyes/EyesKimiko.PNG",
+        "brows": "assets/DollParts/Eyebrows/BrowsLydia.PNG",
+        "nose": "assets/DollParts/Noses/NoseKimiko.PNG",
+        "lips": "assets/DollParts/Lips/Lipsbrown.PNG",
         "faceDetails": "",
         "necklace": "",
-        "dress": "/assets/DollParts/Dresses/Dressstarter.PNG",
+        "dress": "assets/DollParts/Dresses/Dressstarter.PNG",
         "shoes": "",
-        "hair": "/assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG",
+        "hair": "assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG",
         "glasses": ""
     });
 
