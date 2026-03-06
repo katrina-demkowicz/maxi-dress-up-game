@@ -3,15 +3,15 @@ const Lip = (props) =>
 {
 
     const lips = [
-        "/assets/DollParts/Lips/Lipsblack.PNG",
-        "/assets/DollParts/Lips/Lipsbrown.PNG",
-        "/assets/DollParts/Lips/Lipsdarkbrown.PNG",
-        "/assets/DollParts/Lips/Lipshotpink.PNG",
-        "/assets/DollParts/Lips/Lipslightpink.PNG",
-        "/assets/DollParts/Lips/Lipsorange.PNG",
-        "/assets/DollParts/Lips/Lipspurple.PNG",
-        "/assets/DollParts/Lips/Lipsred.PNG",
-        "/assets/DollParts/Lips/Lipswhite.PNG"
+        "assets/DollParts/Lips/Lipsblack.PNG",
+        "assets/DollParts/Lips/Lipsbrown.PNG",
+        "assets/DollParts/Lips/Lipsdarkbrown.PNG",
+        "assets/DollParts/Lips/Lipshotpink.PNG",
+        "assets/DollParts/Lips/Lipslightpink.PNG",
+        "assets/DollParts/Lips/Lipsorange.PNG",
+        "assets/DollParts/Lips/Lipspurple.PNG",
+        "assets/DollParts/Lips/Lipsred.PNG",
+        "assets/DollParts/Lips/Lipswhite.PNG"
     ]
 
     const saveChange = (lip) =>
