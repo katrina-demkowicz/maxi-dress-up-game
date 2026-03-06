@@ -16,31 +16,31 @@ const Shoe = (props) =>
     //seperate by shoe size, like tall boots and shorter shoes
     const shoes = [
         [
-            "/assets/DollParts/Shoes/Bootsbuffaloblack.PNG",
-            "/assets/DollParts/Shoes/Bootsbuffalowhite.PNG",
-            "/assets/DollParts/Shoes/Bootsdestroyblack.PNG",
-            "/assets/DollParts/Shoes/Bootsdestroybrown.PNG",
-            "/assets/DollParts/Shoes/Bootspatchwork.PNG",
-            "/assets/DollParts/Shoes/Bootssonaxblack.PNG",
-            "/assets/DollParts/Shoes/Bootssonaxbrown.PNG",
-            "/assets/DollParts/Shoes/Bootswedgebrown.PNG",
-            "/assets/DollParts/Shoes/Bootswedgewhite.PNG",
-            "/assets/DollParts/Shoes/Sandalsstringblack.PNG",
-            "/assets/DollParts/Shoes/Sandalsstringbrown.PNG"            
+            "assets/DollParts/Shoes/Bootsbuffaloblack.PNG",
+            "assets/DollParts/Shoes/Bootsbuffalowhite.PNG",
+            "assets/DollParts/Shoes/Bootsdestroyblack.PNG",
+            "assets/DollParts/Shoes/Bootsdestroybrown.PNG",
+            "assets/DollParts/Shoes/Bootspatchwork.PNG",
+            "assets/DollParts/Shoes/Bootssonaxblack.PNG",
+            "assets/DollParts/Shoes/Bootssonaxbrown.PNG",
+            "assets/DollParts/Shoes/Bootswedgebrown.PNG",
+            "assets/DollParts/Shoes/Bootswedgewhite.PNG",
+            "assets/DollParts/Shoes/Sandalsstringblack.PNG",
+            "assets/DollParts/Shoes/Sandalsstringbrown.PNG"            
         ],
         [
-            "/assets/DollParts/Shoes/ClogsBlue.png",
-            "/assets/DollParts/Shoes/LoafersBlack.PNG",
-            "/assets/DollParts/Shoes/LoafersBrown.PNG",
-            "/assets/DollParts/Shoes/Maryjanesblack.PNG",
-            "/assets/DollParts/Shoes/Maryjanessilver.PNG",
-            "/assets/DollParts/Shoes/Sandalsblack.PNG",
-            "/assets/DollParts/Shoes/Sandalsbrown.PNG",
-            "/assets/DollParts/Shoes/Sandalsflowerblack.PNG",
-            "/assets/DollParts/Shoes/Sandalsflowersilver.PNG",          
-            "/assets/DollParts/Shoes/Sandalswhite.PNG",
-            "/assets/DollParts/Shoes/StrappyHeelsBlack.PNG",
-            "/assets/DollParts/Shoes/StrappyHeelsSilver.PNG"
+            "assets/DollParts/Shoes/ClogsBlue.png",
+            "assets/DollParts/Shoes/LoafersBlack.PNG",
+            "assets/DollParts/Shoes/LoafersBrown.PNG",
+            "assets/DollParts/Shoes/Maryjanesblack.PNG",
+            "assets/DollParts/Shoes/Maryjanessilver.PNG",
+            "assets/DollParts/Shoes/Sandalsblack.PNG",
+            "assets/DollParts/Shoes/Sandalsbrown.PNG",
+            "assets/DollParts/Shoes/Sandalsflowerblack.PNG",
+            "assets/DollParts/Shoes/Sandalsflowersilver.PNG",          
+            "assets/DollParts/Shoes/Sandalswhite.PNG",
+            "assets/DollParts/Shoes/StrappyHeelsBlack.PNG",
+            "assets/DollParts/Shoes/StrappyHeelsSilver.PNG"
         ]
     ]
 

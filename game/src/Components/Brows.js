@@ -3,13 +3,13 @@ const Brow = (props) =>
 {
 
     const brows = [
-        "/assets/DollParts/Eyebrows/BrowsAdrian.PNG",
-        "/assets/DollParts/Eyebrows/BrowsCelesta.PNG",
-        "/assets/DollParts/Eyebrows/BrowsDolores.PNG",
-        "/assets/DollParts/Eyebrows/BrowsImogen.PNG",
-        "/assets/DollParts/Eyebrows/BrowsLacramioara.PNG",
-        "/assets/DollParts/Eyebrows/BrowsLakshmi.PNG",
-        "/assets/DollParts/Eyebrows/BrowsLydia.PNG"
+        "assets/DollParts/Eyebrows/BrowsAdrian.PNG",
+        "assets/DollParts/Eyebrows/BrowsCelesta.PNG",
+        "assets/DollParts/Eyebrows/BrowsDolores.PNG",
+        "assets/DollParts/Eyebrows/BrowsImogen.PNG",
+        "assets/DollParts/Eyebrows/BrowsLacramioara.PNG",
+        "assets/DollParts/Eyebrows/BrowsLakshmi.PNG",
+        "assets/DollParts/Eyebrows/BrowsLydia.PNG"
     ]
 
     const saveChange = (brow) =>

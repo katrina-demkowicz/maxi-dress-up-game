@@ -4,43 +4,43 @@ const Dress = (props) =>
 {
     const dresses = [
         [
-            "/assets/DollParts/Dresses/Dresspinkblossom.PNG",
-            "/assets/DollParts/Dresses/Dressmagenta.PNG",
-            "/assets/DollParts/Dresses/Dresspinkleopard.PNG",
-            "/assets/DollParts/Dresses/Dressredmini.PNG",
-            "/assets/DollParts/Dresses/Dressbutterfly.PNG",
-            "/assets/DollParts/Dresses/Dressstarter.PNG",
-            "/assets/DollParts/Dresses/Dresspurpleflamevelvet.PNG",
-            "/assets/DollParts/Dresses/Dressqipao.PNG",
-            "/assets/DollParts/Dresses/DresssilverAsian.PNG",
-            "/assets/DollParts/Dresses/Dressleopard.PNG",
-            "/assets/DollParts/Dresses/DressRenaissanceart.PNG",
-            "/assets/DollParts/Dresses/Dressdaisybuttonup.PNG"
+            "assets/DollParts/Dresses/Dresspinkblossom.PNG",
+            "assets/DollParts/Dresses/Dressmagenta.PNG",
+            "assets/DollParts/Dresses/Dresspinkleopard.PNG",
+            "assets/DollParts/Dresses/Dressredmini.PNG",
+            "assets/DollParts/Dresses/Dressbutterfly.PNG",
+            "assets/DollParts/Dresses/Dressstarter.PNG",
+            "assets/DollParts/Dresses/Dresspurpleflamevelvet.PNG",
+            "assets/DollParts/Dresses/Dressqipao.PNG",
+            "assets/DollParts/Dresses/DresssilverAsian.PNG",
+            "assets/DollParts/Dresses/Dressleopard.PNG",
+            "assets/DollParts/Dresses/DressRenaissanceart.PNG",
+            "assets/DollParts/Dresses/Dressdaisybuttonup.PNG"
         ],
         [
-            "/assets/DollParts/Dresses/Dressgreen.PNG",
-            "/assets/DollParts/Dresses/Dressiceblueasymmetrical.PNG",
-            "/assets/DollParts/Dresses/Dressbluelace.PNG",
-            "/assets/DollParts/Dresses/Dressblackfloral.PNG",
-            "/assets/DollParts/Dresses/Dress80sruffle.PNG",
-            "/assets/DollParts/Dresses/Dress80sgreen.PNG",
+            "assets/DollParts/Dresses/Dressgreen.PNG",
+            "assets/DollParts/Dresses/Dressiceblueasymmetrical.PNG",
+            "assets/DollParts/Dresses/Dressbluelace.PNG",
+            "assets/DollParts/Dresses/Dressblackfloral.PNG",
+            "assets/DollParts/Dresses/Dress80sruffle.PNG",
+            "assets/DollParts/Dresses/Dress80sgreen.PNG",
             
         ],
         [
-            "/assets/DollParts/Dresses/Dressblackmaxisheer.PNG",
-            "/assets/DollParts/Dresses/Dressredvelvetgoth.PNG",
-            "/assets/DollParts/Dresses/Dressgothsinister.PNG",
-            "/assets/DollParts/Dresses/Dressdarkblueroses.PNG",
-            "/assets/DollParts/Dresses/Dresspurplefur.PNG",
-            "/assets/DollParts/Dresses/Dresslightblueroses.PNG"
+            "assets/DollParts/Dresses/Dressblackmaxisheer.PNG",
+            "assets/DollParts/Dresses/Dressredvelvetgoth.PNG",
+            "assets/DollParts/Dresses/Dressgothsinister.PNG",
+            "assets/DollParts/Dresses/Dressdarkblueroses.PNG",
+            "assets/DollParts/Dresses/Dresspurplefur.PNG",
+            "assets/DollParts/Dresses/Dresslightblueroses.PNG"
         ],
         [
-            "/assets/DollParts/Dresses/Dressbluemaxi.PNG",
-            "/assets/DollParts/Dresses/Dresspurplemaxi.PNG",
-            "/assets/DollParts/Dresses/Dressredmaxi.PNG",
-            "/assets/DollParts/Dresses/Dressorange.PNG",
-            "/assets/DollParts/Dresses/Dress70sdaisy.PNG",
-            "/assets/DollParts/Dresses/Dress70sGunneSax.PNG"
+            "assets/DollParts/Dresses/Dressbluemaxi.PNG",
+            "assets/DollParts/Dresses/Dresspurplemaxi.PNG",
+            "assets/DollParts/Dresses/Dressredmaxi.PNG",
+            "assets/DollParts/Dresses/Dressorange.PNG",
+            "assets/DollParts/Dresses/Dress70sdaisy.PNG",
+            "assets/DollParts/Dresses/Dress70sGunneSax.PNG"
             // "/assets/DollParts/Dresses/Dressbluesparkle.PNG"
         ]
     ]
