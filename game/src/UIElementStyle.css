@@ -1,0 +1,6 @@
+.RemoveFaceDetail {
+    height: 250px;
+    width: 250px;
+    transform: scale(20.26%);
+    border: 2px solid red;
+}
