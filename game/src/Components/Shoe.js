@@ -2,16 +2,6 @@ import { useState } from 'react';
 
 const Shoe = (props) =>
 {
-    //tall chunky
-    // "/assets/DollParts/Shoes/Bootskojikugablack.PNG",
-    //         "/assets/DollParts/Shoes/Bootskojikugawhite.PNG",
-    //medium chunky
-    // "/assets/DollParts/Shoes/Bootsganguroblack.PNG",
-    //         "/assets/DollParts/Shoes/Bootsgangurobrown.PNG",
-    //         "/assets/DollParts/Shoes/Bootswedgeblack.PNG",
-    //medium tall
-    // "/assets/DollParts/Shoes/Shoeskogalblack.PNG",
-    //         "/assets/DollParts/Shoes/Shoeskogalbrown.PNG",
 
     //seperate by shoe size, like tall boots and shorter shoes
     const shoes = [
@@ -26,7 +16,21 @@ const Shoe = (props) =>
             "assets/DollParts/Shoes/Bootswedgebrown.PNG",
             "assets/DollParts/Shoes/Bootswedgewhite.PNG",
             "assets/DollParts/Shoes/Sandalsstringblack.PNG",
-            "assets/DollParts/Shoes/Sandalsstringbrown.PNG"            
+            "assets/DollParts/Shoes/Sandalsstringbrown.PNG",
+            "assets/DollParts/Shoes/Bootsganguroblack.PNG"          
+        ],
+        [
+            
+            "assets/DollParts/Shoes/Bootsgangurobrown.PNG",
+            "assets/DollParts/Shoes/Bootswedgeblack.PNG"
+        ],
+        [
+            "assets/DollParts/Shoes/Bootskojikugablack.PNG",
+            "assets/DollParts/Shoes/Bootskojikugawhite.PNG",
+        ],
+        [
+            "/assets/DollParts/Shoes/Shoeskogalblack.PNG",
+            "/assets/DollParts/Shoes/Shoeskogalbrown.PNG"
         ],
         [
             "assets/DollParts/Shoes/ClogsBlue.png",
@@ -68,17 +72,27 @@ const Shoe = (props) =>
 
     return(
         <div>
-            {/* tall boots */}
+            {/* boots */}
             {page === 0 && 
                 <div className='Shoe-Option'>
                     {shoes[0].map((shoe, i) => {
                         return (<div className='Tall-Boot-Image'><img className='Tall-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
                     })}
+                    {shoes[1].map((shoe, i) => {
+                        return (<div className='Tall-Chunky-Boot-Image'><img className='Tall-Chunky-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
+                    })}
+                    {shoes[2].map((shoe, i) => {
+                        return (<div className='Medium-Chunky-Boot-Image'><img className='Medium-Chunky-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
+                    })}
+                    {shoes[3].map((shoe, i) => {
+                        return (<div className='Medium-Chunky-Boot-Image'><img className='Medium-Chunky-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
+                    })}
                 </div>
             }
+            {/* regular shoes */}
             {page === 1 && 
                 <div className='Shoe-Option'>
-                    {shoes[1].map((shoe, i) => {
+                    {shoes[4].map((shoe, i) => {
                         return (<div className='Short-Shoe-Image'><img className='Short-Shoe' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
                     })}
                 </div>

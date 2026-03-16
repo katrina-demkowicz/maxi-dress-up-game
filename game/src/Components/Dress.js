@@ -9,7 +9,7 @@ const Dress = (props) =>
             "assets/DollParts/Dresses/Dresspinkleopard.PNG",
             "assets/DollParts/Dresses/Dressredmini.PNG",
             "assets/DollParts/Dresses/Dressbutterfly.PNG",
-            "assets/DollParts/Dresses/Dressstarter.PNG",
+            "assets/DollParts/Dresses/DressBlackShortFloral.PNG",
             "assets/DollParts/Dresses/Dresspurpleflamevelvet.PNG",
             "assets/DollParts/Dresses/Dressqipao.PNG",
             "assets/DollParts/Dresses/DresssilverAsian.PNG",
