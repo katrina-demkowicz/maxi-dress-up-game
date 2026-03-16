@@ -38,26 +38,26 @@ function Page()
         return(
             <div className='Game'>
                 <div className='Doll-Container'>
-                    <img className="Doll" src={doll.body} alt="body" />
+                    <img className='Doll' src={doll.body} alt="body" />
                         {doll.shoes !== "" &&
                             <img className="Doll" src={doll.shoes} alt="shoes" />
                         }
-                        <img className="Doll" src={doll.dress} alt="dress" />
-                        <img className="Doll" src={doll.eyes} alt="eyes" />
-                        <img className="Doll" src={doll.brows} alt="brows" />
-                        <img className="Doll" src={doll.nose} alt="nose" />
-                        <img className="Doll" src={doll.lips} alt="lips" />
-                        <img className="Doll" src={doll.hair} alt="hair" />
+                        <img className='Doll' src={doll.dress} alt="dress" />
+                        <img className='Doll' src={doll.eyes} alt="eyes" />
+                        <img className='Doll' src={doll.brows} alt="brows" />
+                        <img className='Doll' src={doll.nose} alt="nose" />
+                        <img className='Doll' src={doll.lips} alt="lips" />
+                        <img className='Doll' src={doll.hair} alt="hair" />
                         {/* empty string attributes */}
                         {doll.faceDetails !== "" &&
-                            <img className="Doll" src={doll.faceDetails} alt="face details" />
+                            <img className='Doll' src={doll.faceDetails} alt="face details" />
                         }
-                        <img className="Doll" src={doll.hair} alt="hair" />
+                        <img className='Doll' src={doll.hair} alt="hair" />
                         {doll.glasses !== "" &&
-                            <img className="Doll" src={doll.glasses} alt="glasses" />
+                            <img className='Doll' src={doll.glasses} alt="glasses" />
                         }
                         {doll.necklace !== "" &&
-                            <img className="Doll" src={doll.necklace} alt="necklace" />
+                            <img className='Doll' src={doll.necklace} alt="necklace" />
                         }  
                 </div>
                 <Selection callback={updateCharacter}/>

@@ -9,6 +9,7 @@ import SelectionButton from './SelectionButtons';
 import Dress from './Dress';
 import Hair from './Hair';
 import Shoe from './Shoe';
+import Accessory from './Accessory';
 
 const Selection = (props) =>
 {
@@ -16,7 +17,15 @@ const Selection = (props) =>
         "Face",
         "Hair",
         "Dresses",
-        "Shoes"
+        "Shoes",
+        "Accessories"
+    ]
+
+    // add socks too?
+    const accessoryButtons = [
+        "Glasses",
+        "Necklaces",
+        "Gloves"
     ]
 
     const [selection, setSelection] = useState("Face")
@@ -62,6 +71,14 @@ const Selection = (props) =>
                 <div>
                     <Shoe callback={updateCharacter}/>
                 </div>
+            }
+            {selection === "Accessories" &&
+                <div className='Selection-Button-Container'>
+                    {accessoryButtons.map((accessoryButton, i) => {
+                        return (<SelectionButton name={accessoryButton} callback={() => updateSelection(accessoryButton)} />)
+                    })}
+                </div>
+                
             }
         </div>
     )

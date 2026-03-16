@@ -69,6 +69,7 @@ const Dress = (props) =>
 
     //render pages dynamically? - this might not be good for customization of pages
     //hard coded page rendering - easy to add different classNames
+    //structure like shoes
     return(
         <div>
             {/* short dresses */}
