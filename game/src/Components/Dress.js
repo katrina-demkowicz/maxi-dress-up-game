@@ -24,7 +24,6 @@ const Dress = (props) =>
             "assets/DollParts/Dresses/Dressblackfloral.PNG",
             "assets/DollParts/Dresses/Dress80sruffle.PNG",
             "assets/DollParts/Dresses/Dress80sgreen.PNG",
-            
         ],
         [
             "assets/DollParts/Dresses/Dressblackmaxisheer.PNG",
