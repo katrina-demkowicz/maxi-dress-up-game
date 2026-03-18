@@ -31,7 +31,7 @@ const FaceDetail = (props) =>
             {details.map((detail, i) => {
                 return (<div className='FaceDetail-Image' key={i}><img className='FaceDetails' src={detail} alt={detail} key={i} onClick={() => saveChange(detail)} ></img></div>)
             })}
-            <div classname='FaceDetail-Image'><img className='RemoveFaceDetail'  src={"assets/UI_elements/black_x.png"} alt={"remove face detail"} onClick={remove} ></img></div>
+            <div className='FaceDetail-Image'><img className='RemoveFaceDetail'  src={"assets/UI_elements/black_x.png"} alt={"remove face detail"} onClick={remove} ></img></div>
         </div>
     )
 }

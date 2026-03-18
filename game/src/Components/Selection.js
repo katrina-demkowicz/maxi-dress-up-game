@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import Eyes from './Eyes';
 import Nose from './Nose';
 import Lip from './Lip';
@@ -10,6 +10,7 @@ import Dress from './Dress';
 import Hair from './Hair';
 import Shoe from './Shoe';
 import Accessory from './Accessory';
+import Credits from './Credits';
 
 const Selection = (props) =>
 {
@@ -18,14 +19,7 @@ const Selection = (props) =>
         "Hair",
         "Dresses",
         "Shoes",
-        "Accessories"
-    ]
-
-    // add socks too?
-    const accessoryButtons = [
-        "Glasses",
-        "Necklaces",
-        "Gloves"
+        "Credits"
     ]
 
     const [selection, setSelection] = useState("Face")
@@ -40,7 +34,6 @@ const Selection = (props) =>
     }
 
     return(
-
         <div className='Item-Option'>
             <div className='Selection-Button-Container'>
                 {buttons.map((button, i) => {
@@ -72,13 +65,13 @@ const Selection = (props) =>
                     <Shoe callback={updateCharacter}/>
                 </div>
             }
-            {selection === "Accessories" &&
-                <div className='Selection-Button-Container'>
-                    {accessoryButtons.map((accessoryButton, i) => {
-                        return (<SelectionButton name={accessoryButton} callback={() => updateSelection(accessoryButton)} />)
-                    })}
+            {/* {selection === "Accessories" &&
+
+            } */}
+            {selection === "Credits" &&
+                <div>
+                    <Credits/>
                 </div>
-                
             }
         </div>
     )
