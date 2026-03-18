@@ -18,9 +18,9 @@ const Brow = (props) =>
     }
 
     return(
-        <div className="Brow-Option">
+        <div className='Brow-Option'>
             {brows.map((brow, i) => {
-                return (<div className='Image' key={i}><img className="Brows" src={brow} alt={brow} key={i} onClick={() => saveChange(brow)} ></img></div>)
+                return (<div className='Image' key={i}><img className='Brows' src={brow} alt={brow} key={i} onClick={() => saveChange(brow)} ></img></div>)
             })}
         </div>
     )

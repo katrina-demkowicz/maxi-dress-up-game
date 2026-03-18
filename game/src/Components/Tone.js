@@ -50,9 +50,9 @@ const Tone = (props) =>
     }
 
     return(
-        <div className="Tone-Option">
+        <div className='Tone-Option'>
             {tones.map((tone, i) => {
-                return (<div className="Tone-Image" key={i}><img className="Tones" src={tone.tone} alt={tone.tone} key={i} onClick={() => saveChange(tone.body)} ></img></div>)
+                return (<div className='Tone-Image' key={i}><img className='Tones' src={tone.tone} alt={tone.tone} key={i} onClick={() => saveChange(tone.body)} ></img></div>)
             })}
         </div>
     )

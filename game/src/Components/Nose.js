@@ -20,9 +20,9 @@ const Nose = (props) =>
     }
 
     return(
-        <div className="Nose-Option">
+        <div className='Nose-Option'>
             {noses.map((nose, i) => {
-                return (<div className='Image' key={i}><img className="Noses" src={nose} alt={nose} key={i} onClick={() => saveChange(nose)} ></img></div>)
+                return (<div className='Image' key={i}><img className='Noses' src={nose} alt={nose} key={i} onClick={() => saveChange(nose)} ></img></div>)
             })}
         </div>
     )

@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import Eyes from './Eyes';
 import Nose from './Nose';
 import Lip from './Lip';
@@ -9,6 +9,8 @@ import SelectionButton from './SelectionButtons';
 import Dress from './Dress';
 import Hair from './Hair';
 import Shoe from './Shoe';
+import Accessory from './Accessory';
+import Credits from './Credits';
 
 const Selection = (props) =>
 {
@@ -16,7 +18,8 @@ const Selection = (props) =>
         "Face",
         "Hair",
         "Dresses",
-        "Shoes"
+        "Shoes",
+        "Credits"
     ]
 
     const [selection, setSelection] = useState("Face")
@@ -31,7 +34,6 @@ const Selection = (props) =>
     }
 
     return(
-
         <div className='Item-Option'>
             <div className='Selection-Button-Container'>
                 {buttons.map((button, i) => {
@@ -61,6 +63,14 @@ const Selection = (props) =>
             {selection === "Shoes" &&
                 <div>
                     <Shoe callback={updateCharacter}/>
+                </div>
+            }
+            {/* {selection === "Accessories" &&
+
+            } */}
+            {selection === "Credits" &&
+                <div>
+                    <Credits/>
                 </div>
             }
         </div>
