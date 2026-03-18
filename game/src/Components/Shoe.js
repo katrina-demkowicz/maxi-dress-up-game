@@ -29,8 +29,8 @@ const Shoe = (props) =>
             "assets/DollParts/Shoes/Bootskojikugawhite.PNG",
         ],
         [
-            "/assets/DollParts/Shoes/Shoeskogalblack.PNG",
-            "/assets/DollParts/Shoes/Shoeskogalbrown.PNG"
+            "assets/DollParts/Shoes/Shoeskogalblack.PNG",
+            "assets/DollParts/Shoes/Shoeskogalbrown.PNG"
         ],
         [
             "assets/DollParts/Shoes/ClogsBlue.png",
