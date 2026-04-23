@@ -11,6 +11,7 @@ import Hair from './Hair';
 import Shoe from './Shoe';
 import Accessory from './Accessory';
 import Credits from './Credits';
+import Background from './background';
 
 const Selection = (props) =>
 {
@@ -19,6 +20,7 @@ const Selection = (props) =>
         "Hair",
         "Dresses",
         "Shoes",
+        "Background",
         "Credits"
     ]
 
@@ -65,9 +67,11 @@ const Selection = (props) =>
                     <Shoe callback={updateCharacter}/>
                 </div>
             }
-            {/* {selection === "Accessories" &&
-
-            } */}
+            {selection === "Background" &&
+                <div>
+                    <Background callback={updateCharacter}/>
+                </div>
+            }
             {selection === "Credits" &&
                 <div>
                     <Credits/>

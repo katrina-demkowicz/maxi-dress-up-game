@@ -12,6 +12,16 @@
     position: relative;
 }
 
+.Background-Container {
+    width: 708px;
+    height: 1782px;
+    object-fit: none;
+    object-position: 50% 50%;
+    transform: scale(40%);
+    transform-origin: top left;
+    position: absolute;
+}
+
 .Doll {
     position: absolute;
     height: 100%;
@@ -321,6 +331,29 @@ maybe i can make this set overall larger view */
 .Short-Shoe-Image {
     height: 150px;
     width: 130px;
+}
+
+.Background-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 600px;
+}
+
+.Background {
+    margin-top: 70px;
+    margin-left: 120px;
+    height: 1500px;
+    width: 1500px;
+    object-fit: none;
+    object-position: 49% 97%;
+    transform: scale(6%);
+    transform-origin: top left;
+}
+
+.Background-Image {
+    height: 92px;
+    width: 92px;
 }
 
 
