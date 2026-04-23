@@ -4,3 +4,10 @@
     transform: scale(20.26%);
     border: 2px solid red;
 }
+
+.NextButton {
+    position: absolute;
+    left: 25px;
+    bottom: 15px;
+    border: 2px solid red;
+}

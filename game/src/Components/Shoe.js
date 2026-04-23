@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PageButton from './PageButton';
 
 const Shoe = (props) =>
 {
@@ -50,24 +51,14 @@ const Shoe = (props) =>
 
     const [page, setPage] = useState(0);
 
-    
-    const pageRight = () => {
-        if (page < shoes.length - 1)
-        {
-            setPage(page + 1);
-        }
-    }
-
-    const pageLeft = () => {
-        if (page > 0)
-        {
-            setPage(page - 1);
-        }
-    }
-
     const saveChange = (shoe) =>
     {
         props.callback("shoes", shoe);
+    }
+
+    const updatePage = (pageNumber) =>
+    {
+        setPage(pageNumber);
     }
 
     return(
@@ -97,8 +88,7 @@ const Shoe = (props) =>
                     })}
                 </div>
             }
-            <button onClick={pageLeft}>left</button>
-            <button onClick={pageRight}>right</button>
+            <PageButton currentPage={page} pageLength={1} callback={updatePage}/>
         </div>
     )
 

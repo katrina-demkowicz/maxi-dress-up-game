@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PageButton from './PageButton';
 
 const Dress = (props) =>
 {
@@ -48,23 +49,14 @@ const Dress = (props) =>
     //useState for dress pages, each page with a list of dresses
     const [page, setPage] = useState(0)
 
-    const pageRight = () => {
-        if (page < dresses.length - 1)
-        {
-            setPage(page + 1);
-        }
-    }
-
-    const pageLeft = () => {
-        if (page > 0)
-        {
-            setPage(page - 1);
-        }
-    }
-
     const saveChange = (dress) =>
     {
         props.callback("dress", dress);
+    }
+
+    const updatePage = (pageNumber) =>
+    {
+        setPage(pageNumber);
     }
 
     //render pages dynamically? - this might not be good for customization of pages
@@ -112,8 +104,7 @@ const Dress = (props) =>
                     })}
                 </div>
             }
-            <button onClick={pageLeft}>left</button>
-            <button onClick={pageRight}>right</button>
+            <PageButton currentPage={page} pageLength={2} callback={updatePage}/>
         </div>
     )
 }
