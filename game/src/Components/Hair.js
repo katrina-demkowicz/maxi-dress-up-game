@@ -130,7 +130,7 @@ const Hair = (props) =>
     }
 
     return(
-        <div>
+        <div className='Hair-Container'>
             {color === "Black" && 
                 <div className='Hair-Option'>
                     {styles["Black"].map((style, i) => {

@@ -2,12 +2,16 @@
     height: 250px;
     width: 250px;
     transform: scale(20.26%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .NextButton {
     position: absolute;
     left: 25px;
     bottom: 15px;
-    border: 2px solid red;
+}
+
+.Credits {
+    position: absolute;
+    left: 25px;
 }

@@ -82,7 +82,7 @@ const Shoe = (props) =>
             }
             {/* regular shoes */}
             {page === 1 && 
-                <div className='Shoe-Option'>
+                <div className='Short-Shoe-Option'>
                     {shoes[4].map((shoe, i) => {
                         return (<div className='Short-Shoe-Image'><img className='Short-Shoe' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
                     })}

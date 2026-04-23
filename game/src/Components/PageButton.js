@@ -20,8 +20,12 @@ const PageButton = (props) =>
 
     return(
         <div className='NextButton'>
-                <button onClick={pageLeft}>left</button>
-                <button onClick={pageRight}>right</button>
+            {currentPage !== 0 &&
+                <button onClick={pageLeft}>previous</button>
+            }
+            {currentPage !== props.pageLength &&
+                <button onClick={pageRight}>next</button>
+            }
         </div>
     )
 }
