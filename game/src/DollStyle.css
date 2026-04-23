@@ -16,7 +16,7 @@
     width: 708px;
     height: 1782px;
     object-fit: none;
-    object-position: 50% 50%;
+    object-position: 55% 100%;
     transform: scale(40%);
     transform-origin: top left;
     position: absolute;
@@ -134,10 +134,6 @@ maybe i can make this set overall larger view */
 .Tones {
     transform: scale(-25%);
     border: 2px solid black;
-}
-
-.Selection-Button-Container {
-    display: flex;
 }
 
 .Short-Dress-Option {

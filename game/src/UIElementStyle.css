@@ -1,3 +1,13 @@
+.Selection-Button-Container {
+    display: flex;
+    transform: scale(15%);
+    transform-origin: top left;
+}
+
+.Selection-Button-Image {
+    height: 30px;
+}
+
 .RemoveFaceDetail {
     height: 250px;
     width: 250px;
