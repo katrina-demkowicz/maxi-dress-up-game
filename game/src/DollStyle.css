@@ -1,13 +1,25 @@
 .Game {
     font-size: 20;
     display: flex;
+    width: 1086px;
+    background-color: rgb(159, 185, 227);
 }
 
 .Doll-Container {
     width: 281.575px;
     height: 712.5px;
-    border: 2px solid red;
+    border: 2px solid black;
     position: relative;
+}
+
+.Background-Container {
+    width: 708px;
+    height: 1782px;
+    object-fit: none;
+    object-position: 35% 100%;
+    transform: scale(40%);
+    transform-origin: top left;
+    position: absolute;
 }
 
 .Doll {
@@ -19,8 +31,8 @@
     position: absolute;
     left: 283.575px;
     width: 800px;
-    height: 700px;
-    border: 2px solid red;
+    height: 712.5px;
+    border: 2px solid black;
 }
 
 .Image {
@@ -39,7 +51,7 @@
     object-fit: none;
     object-position: 58% 13%;
     transform: scale(40%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .Nose-Option {
@@ -53,7 +65,7 @@
     object-fit: none;
     object-position: 49% 14%;
     transform: scale(40%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .Lip-Option {
@@ -67,7 +79,7 @@
     object-fit: none;
     object-position: 49% 16.5%;
     transform: scale(40%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .Brow-Option {
@@ -81,7 +93,7 @@
     object-fit: none;
     object-position: 57% 10.5%;
     transform: scale(40%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .FaceDetail-Image {
@@ -104,7 +116,7 @@ maybe i can make this set overall larger view */
     object-fit: none;
     object-position: 49.5% 12%;
     transform: scale(20.26%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .Tone-Image {
@@ -121,14 +133,12 @@ maybe i can make this set overall larger view */
 
 .Tones {
     transform: scale(-25%);
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
-.Selection-Button-Container {
-    display: flex;
-}
-
-.Dress-Option {
+.Short-Dress-Option {
+    margin-top: 30px;
+    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -140,12 +150,19 @@ maybe i can make this set overall larger view */
     object-position: 49% 36%;
     transform: scale(25%);
     transform-origin: top left;
-    border: 2px solid red;
+    border: 2px solid rgb(65, 75, 140);
 }
 
 .Short-Dress-Image {
     height: 270px;
     width: 130px;
+}
+
+.Medium-Dress-Option {
+    margin-top: 15px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Medium-Dress {
@@ -155,7 +172,7 @@ maybe i can make this set overall larger view */
     object-position: 49% 48%;
     transform: scale(25%);
     transform-origin: top left;
-    border: 2px solid red;
+    border: 2px solid rgb(65, 75, 140);
 }
 
 .Eighties-Ruffle {
@@ -166,7 +183,7 @@ maybe i can make this set overall larger view */
     transform: scale(25%);
     transform-origin: top left;
     margin-left: -35px;
-    border: 2px solid red;
+    border: 2px solid rgb(65, 75, 140);
 }
 
 .Eighties-Green {
@@ -177,12 +194,18 @@ maybe i can make this set overall larger view */
     transform: scale(25%);
     transform-origin: top left;
     margin-left: 110px;
-    border: 2px solid red;
+    border: 2px solid rgb(65, 75, 140);
 }
 
 .Medium-Dress-Image {
     height: 325px;
     width: 250px;
+}
+
+.Long-Dress-Option {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Long-Narrow-Dress {
@@ -192,7 +215,7 @@ maybe i can make this set overall larger view */
     object-position: 49% 63%;
     transform: scale(23%);
     transform-origin: top left;
-    border: 2px solid red;
+    border: 2px solid rgb(65, 75, 140);
 }
 
 .Long-Narrow-Dress-Image {
@@ -200,11 +223,18 @@ maybe i can make this set overall larger view */
     width: 133px;
 }
 
+.Hair-Container {
+    position: relative;
+    left: 45px;
+    top: 30px;
+    width: 665px;
+    border: 2px solid black;
+}
+
 .Hair-Option {
     display: flex;
     flex-wrap: wrap;
     width: 700px;
-    border: 2px solid red;
 }
 
 .Hair-Image {
@@ -219,7 +249,7 @@ maybe i can make this set overall larger view */
     object-position: 45% 1%;
     transform: scale(17%);
     transform-origin: top left;
-    border: 2px solid red;
+    border: 2px solid rgb(65, 75, 140);
 }
 
 .Shoe-Option {
@@ -227,14 +257,22 @@ maybe i can make this set overall larger view */
     flex-wrap: wrap;
 }
 
+.Short-Shoe-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 600px;
+}
+
 .Tall-Boot {
+    margin-top: 30px;
+    margin-left: 23px;
     height: 750px;
     width: 410px;
     object-fit: none;
     object-position: 49% 95%;
     transform: scale(25%);
     transform-origin: top left;
-    border: 2px solid red;
 }
 
 .Tall-Boot-Image {
@@ -243,13 +281,14 @@ maybe i can make this set overall larger view */
 }
 
 .Tall-Chunky-Boot {
+    margin-top: 30px;
+    margin-left: 23px;
     height: 750px;
     width: 410px;
     object-fit: none;
     object-position: 49% 98%;
     transform: scale(25%);
     transform-origin: top left;
-    border: 2px solid red;
 }
 
 .Tall-Chunky-Boot-Image {
@@ -258,13 +297,14 @@ maybe i can make this set overall larger view */
 }
 
 .Medium-Chunky-Boot {
+    margin-top: 50px;
+    margin-left: 20px;
     height: 590px;
     width: 445px;
     object-fit: none;
     object-position: 49% 98%;
     transform: scale(25%);
     transform-origin: top left;
-    border: 2px solid red;
 }
 
 .Medium-Chunky-Boot-Image {
@@ -273,18 +313,43 @@ maybe i can make this set overall larger view */
 }
 
 .Short-Shoe {
+    margin-top: 80px;
+    margin-left: 150px;
     height: 400px;
     width: 410px;
     object-fit: none;
     object-position: 49% 97%;
     transform: scale(25%);
     transform-origin: top left;
-    border: 2px solid red;
+
 }
 
 .Short-Shoe-Image {
     height: 150px;
     width: 130px;
+}
+
+.Background-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 600px;
+}
+
+.Background {
+    margin-top: 70px;
+    margin-left: 120px;
+    height: 1500px;
+    width: 1500px;
+    object-fit: none;
+    object-position: 49% 97%;
+    transform: scale(6%);
+    transform-origin: top left;
+}
+
+.Background-Image {
+    height: 92px;
+    width: 92px;
 }
 
 

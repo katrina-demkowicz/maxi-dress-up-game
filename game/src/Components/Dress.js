@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PageButton from './PageButton';
 
 const Dress = (props) =>
 {
@@ -47,33 +48,24 @@ const Dress = (props) =>
     //useState for dress pages, each page with a list of dresses
     const [page, setPage] = useState(0)
 
-    const pageRight = () => {
-        if (page < dresses.length - 1)
-        {
-            setPage(page + 1);
-        }
-    }
-
-    const pageLeft = () => {
-        if (page > 0)
-        {
-            setPage(page - 1);
-        }
-    }
-
     const saveChange = (dress) =>
     {
         props.callback("dress", dress);
+    }
+
+    const updatePage = (pageNumber) =>
+    {
+        setPage(pageNumber);
     }
 
     //render pages dynamically? - this might not be good for customization of pages
     //hard coded page rendering - easy to add different classNames
     //structure like shoes
     return(
-        <div>
+        <div className='Dress-Container'>
             {/* short dresses */}
             {page === 0 && 
-                <div className='Dress-Option'>
+                <div className='Short-Dress-Option'>
                     {dresses[0].map((dress, i) => {
                         return (<div className='Short-Dress-Image'><img className='Short-Dress' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
                     })}
@@ -81,7 +73,7 @@ const Dress = (props) =>
             }
             {/* medium length dresses */}
             {page === 1 && 
-                <div className='Dress-Option'>
+                <div className='Medium-Dress-Option'>
                     {dresses[1].map((dress, i) => {
                         if (dress === "/assets/DollParts/Dresses/Dress80sruffle.PNG") {
                             return (<div className='Short-Dress-Image'><img className='Eighties-Ruffle' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
@@ -97,7 +89,7 @@ const Dress = (props) =>
             }
             {/* long narrow dresses */}
             {page === 2 && 
-                <div className='Dress-Option'>
+                <div className='Long-Dress-Option'>
                     {dresses[2].map((dress, i) => {
                         return (<div className='Long-Narrow-Dress-Image'><img className='Long-Narrow-Dress' src={dress} alt={dress} key={i} onClick={() => saveChange(dress)} ></img></div>)
                     })}
@@ -111,8 +103,7 @@ const Dress = (props) =>
                     })}
                 </div>
             }
-            <button onClick={pageLeft}>left</button>
-            <button onClick={pageRight}>right</button>
+            <PageButton currentPage={page} pageLength={2} callback={updatePage}/>
         </div>
     )
 }

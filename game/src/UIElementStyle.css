@@ -1,6 +1,36 @@
+.Selection-Button-Container {
+    display: flex;
+    transform: scale(15%);
+    transform-origin: top left;
+}
+
+.Selection-Button-Image {
+    height: 30px;
+}
+
 .RemoveFaceDetail {
     height: 250px;
     width: 250px;
     transform: scale(20.26%);
-    border: 2px solid red;
+    border: 2px solid black;
+}
+
+.RemoveBackground {
+    margin-top: -108px;
+    margin-left: -58px;
+    height: 442px;
+    width: 442px;
+    transform: scale(20.26%);
+    border: 2px solid black;
+}
+
+.NextButton {
+    position: absolute;
+    left: 25px;
+    bottom: 15px;
+}
+
+.Credits {
+    position: absolute;
+    left: 25px;
 }
