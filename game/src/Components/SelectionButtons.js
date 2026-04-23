@@ -7,8 +7,8 @@ const SelectionButton = (props) =>
     }
 
     return(
-        <div>
-            <button onClick={reportSelection}>{props.name}</button>
+        <div className='Selection-Button-Image'>
+            <img src={props.source} alt={props.name} onClick={reportSelection}/>
         </div>
     )
 }

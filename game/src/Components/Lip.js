@@ -20,9 +20,9 @@ const Lip = (props) =>
     }
 
     return(
-        <div className="Lip-Option">
+        <div className='Lip-Option'>
             {lips.map((lip, i) => {
-                return (<div className='Image' key={i}><img className="Lips" src={lip} alt={lip} key={i} onClick={() => saveChange(lip)} ></img></div>)
+                return (<div className='Image' key={i}><img className='Lips' src={lip} alt={lip} key={i} onClick={() => saveChange(lip)} ></img></div>)
             })}
         </div>
     )

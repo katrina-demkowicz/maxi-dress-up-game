@@ -1,17 +1,8 @@
 import { useState } from 'react';
+import PageButton from './PageButton';
 
 const Shoe = (props) =>
 {
-    //tall chunky
-    // "/assets/DollParts/Shoes/Bootskojikugablack.PNG",
-    //         "/assets/DollParts/Shoes/Bootskojikugawhite.PNG",
-    //medium chunky
-    // "/assets/DollParts/Shoes/Bootsganguroblack.PNG",
-    //         "/assets/DollParts/Shoes/Bootsgangurobrown.PNG",
-    //         "/assets/DollParts/Shoes/Bootswedgeblack.PNG",
-    //medium tall
-    // "/assets/DollParts/Shoes/Shoeskogalblack.PNG",
-    //         "/assets/DollParts/Shoes/Shoeskogalbrown.PNG",
 
     //seperate by shoe size, like tall boots and shorter shoes
     const shoes = [
@@ -26,7 +17,21 @@ const Shoe = (props) =>
             "assets/DollParts/Shoes/Bootswedgebrown.PNG",
             "assets/DollParts/Shoes/Bootswedgewhite.PNG",
             "assets/DollParts/Shoes/Sandalsstringblack.PNG",
-            "assets/DollParts/Shoes/Sandalsstringbrown.PNG"            
+            "assets/DollParts/Shoes/Sandalsstringbrown.PNG",
+            "assets/DollParts/Shoes/Bootsganguroblack.PNG"          
+        ],
+        [
+            
+            "assets/DollParts/Shoes/Bootsgangurobrown.PNG",
+            "assets/DollParts/Shoes/Bootswedgeblack.PNG"
+        ],
+        [
+            "assets/DollParts/Shoes/Bootskojikugablack.PNG",
+            "assets/DollParts/Shoes/Bootskojikugawhite.PNG",
+        ],
+        [
+            "assets/DollParts/Shoes/Shoeskogalblack.PNG",
+            "assets/DollParts/Shoes/Shoeskogalbrown.PNG"
         ],
         [
             "assets/DollParts/Shoes/ClogsBlue.png",
@@ -46,45 +51,44 @@ const Shoe = (props) =>
 
     const [page, setPage] = useState(0);
 
-    
-    const pageRight = () => {
-        if (page < shoes.length - 1)
-        {
-            setPage(page + 1);
-        }
-    }
-
-    const pageLeft = () => {
-        if (page > 0)
-        {
-            setPage(page - 1);
-        }
-    }
-
     const saveChange = (shoe) =>
     {
         props.callback("shoes", shoe);
     }
 
+    const updatePage = (pageNumber) =>
+    {
+        setPage(pageNumber);
+    }
+
     return(
         <div>
-            {/* tall boots */}
+            {/* boots */}
             {page === 0 && 
                 <div className='Shoe-Option'>
                     {shoes[0].map((shoe, i) => {
                         return (<div className='Tall-Boot-Image'><img className='Tall-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
                     })}
+                    {shoes[1].map((shoe, i) => {
+                        return (<div className='Tall-Chunky-Boot-Image'><img className='Tall-Chunky-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
+                    })}
+                    {shoes[2].map((shoe, i) => {
+                        return (<div className='Medium-Chunky-Boot-Image'><img className='Medium-Chunky-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
+                    })}
+                    {shoes[3].map((shoe, i) => {
+                        return (<div className='Medium-Chunky-Boot-Image'><img className='Medium-Chunky-Boot' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
+                    })}
                 </div>
             }
+            {/* regular shoes */}
             {page === 1 && 
-                <div className='Shoe-Option'>
-                    {shoes[1].map((shoe, i) => {
+                <div className='Short-Shoe-Option'>
+                    {shoes[4].map((shoe, i) => {
                         return (<div className='Short-Shoe-Image'><img className='Short-Shoe' src={shoe} alt={shoe} key={i} onClick={() => saveChange(shoe)} ></img></div>)
                     })}
                 </div>
             }
-            <button onClick={pageLeft}>left</button>
-            <button onClick={pageRight}>right</button>
+            <PageButton currentPage={page} pageLength={1} callback={updatePage}/>
         </div>
     )
 

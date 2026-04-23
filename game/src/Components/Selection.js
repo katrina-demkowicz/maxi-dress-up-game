@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import Eyes from './Eyes';
 import Nose from './Nose';
 import Lip from './Lip';
@@ -9,15 +9,19 @@ import SelectionButton from './SelectionButtons';
 import Dress from './Dress';
 import Hair from './Hair';
 import Shoe from './Shoe';
+import Accessory from './Accessory';
+import Credits from './Credits';
+import Background from './background';
 
 const Selection = (props) =>
 {
-    const buttons = [
-        "Face",
-        "Hair",
-        "Dresses",
-        "Shoes"
-    ]
+    const buttons = {        
+        "Face": "assets/UI_elements/navigationButtons/faceButton.png",
+        "Hair": "assets/UI_elements/navigationButtons/hairButton.png",
+        "Dresses": "assets/UI_elements/navigationButtons/dressButton.png",
+        "Shoes": "assets/UI_elements/navigationButtons/shoeButton.png",
+        "Background": "assets/UI_elements/navigationButtons/backgroundButton.png"
+    }
 
     const [selection, setSelection] = useState("Face")
 
@@ -31,11 +35,10 @@ const Selection = (props) =>
     }
 
     return(
-
         <div className='Item-Option'>
             <div className='Selection-Button-Container'>
-                {buttons.map((button, i) => {
-                    return (<SelectionButton name={button} callback={() => updateSelection(button)} />)
+                {Object.entries(buttons).map(([buttonName, filepath]) => {
+                    return (<SelectionButton name={buttonName} source={filepath} callback={() => updateSelection(buttonName)} />)
                 })}
             </div>
             {selection === "Face" && 
@@ -61,6 +64,16 @@ const Selection = (props) =>
             {selection === "Shoes" &&
                 <div>
                     <Shoe callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Background" &&
+                <div>
+                    <Background callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Credits" &&
+                <div>
+                    <Credits/>
                 </div>
             }
         </div>
