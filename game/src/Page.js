@@ -62,12 +62,11 @@ function Page()
                     }
                     {doll.necklace !== "" &&
                         <img className='Doll' src={doll.necklace} alt="necklace" />
-                    }
+                    } 
+                    <img className='Doll' src={doll.hair} alt="hair" />
                     {doll.glasses !== "" &&
                         <img className='Doll' src={doll.glasses} alt="glasses" />
-                    }  
-                    <img className='Doll' src={doll.hair} alt="hair" />
-                    
+                    } 
                 </div>
                 <Selection callback={updateCharacter}/>
             </div>
