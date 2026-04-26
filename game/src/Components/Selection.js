@@ -10,6 +10,7 @@ import Dress from './Dress';
 import Hair from './Hair';
 import Shoe from './Shoe';
 import Glasses from './Glasses';
+import Necklace from './Necklace';
 import Credits from './Credits';
 import Background from './Background';
 
@@ -72,6 +73,11 @@ const Selection = (props) =>
             {selection === "Glasses" &&
                 <div>
                     <Glasses callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Necklaces" &&
+                <div>
+                    <Necklace callback={updateCharacter}/>
                 </div>
             }
             {selection === "Background" &&

@@ -20,7 +20,23 @@
     width: 442px;
     transform: scale(20.26%);
     transform-origin: top left;
-    border: 2px solid black;
+    border: 3px solid black;
+}
+
+.RemoveGlasses {
+    height: 370px;
+    width: 370px;
+    transform: scale(20.26%);
+    transform-origin: top left;
+    border: 4px solid black;
+}
+
+.RemoveNecklace {
+    height: 504px;
+    width: 504px;
+    transform: scale(20.26%);
+    transform-origin: top left;
+    border: 5px solid black;
 }
 
 .NextButton {

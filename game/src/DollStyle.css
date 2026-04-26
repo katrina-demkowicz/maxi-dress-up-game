@@ -338,8 +338,8 @@ maybe i can make this set overall larger view */
 .Glasses-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 140px;
-    margin-top: 60px;
+    margin-left: 220px;
+    margin-top: 80px;
     width: 600px;
 }
 
@@ -349,12 +349,86 @@ maybe i can make this set overall larger view */
     object-fit: none;
     object-position: 50% 13%;
     transform: scale(60%);
+    transform-origin: top left;
     border: 2px solid black;
 }
 
 .Glasses-Image {
     width: 200.69px;
     height: 100px;
+}
+
+.Necklace-Image {
+    width: 110px;
+    height: 110px;
+}
+
+.Necklace-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-top: 140px;
+    width: 600px;
+}
+
+.Short-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 24%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.ChokerwPendent-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 22%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Choker-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 21%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Thin-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 22%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Long-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 30.5%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Medium-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 26%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
 }
 
 .Background-Option {
