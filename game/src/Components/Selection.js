@@ -11,6 +11,7 @@ import Hair from './Hair';
 import Shoe from './Shoe';
 import Glasses from './Glasses';
 import Necklace from './Necklace';
+import Gloves from './Gloves';
 import Credits from './Credits';
 import Background from './Background';
 
@@ -21,9 +22,9 @@ const Selection = (props) =>
         "Hair": "assets/UI_elements/navigationButtons/hairButton.png",
         "Dresses": "assets/UI_elements/navigationButtons/dressButton.png",
         "Shoes": "assets/UI_elements/navigationButtons/shoeButton.png",
-        "Glasses": "assets/UI_elements/navigationButtons/glassesButton.png",
-        "Necklaces": "assets/UI_elements/navigationButtons/necklaceButton.png",
         "Gloves": "assets/UI_elements/navigationButtons/gloveButton.png",
+        "Necklaces": "assets/UI_elements/navigationButtons/necklaceButton.png",
+        "Glasses": "assets/UI_elements/navigationButtons/glassesButton.png",
         "Background": "assets/UI_elements/navigationButtons/backgroundButton.png"
     }
 
@@ -53,7 +54,7 @@ const Selection = (props) =>
                     <Lip callback={updateCharacter}/>
                     <FaceDetail callback={updateCharacter}/>
                     <Tone callback={updateCharacter}/>
-                    <img className='Butterfly-Moth' src={"/assets/UI_elements/Butterflies/LunaMoth.PNG"} alt={"lunaMoth"} ></img>
+                    <img className='Butterfly-Moth' src={"/assets/UI_elements/Butterflies/LunaMoth.PNG"} alt={"lunaMoth"} />
                 </div>
             }
             {selection === "Hair" && 
@@ -79,6 +80,11 @@ const Selection = (props) =>
             {selection === "Necklaces" &&
                 <div>
                     <Necklace callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Gloves" &&
+                <div>
+                    <Gloves callback={updateCharacter}/>
                 </div>
             }
             {selection === "Background" &&

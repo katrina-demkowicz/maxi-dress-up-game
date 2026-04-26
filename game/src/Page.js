@@ -18,7 +18,8 @@ function Page()
         "dress": "assets/DollParts/Dresses/Dressstarter.PNG",
         "shoes": "",
         "hair": "assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG",
-        "glasses": ""
+        "glasses": "",
+        "gloves": ""
     });
 
     const updateCharacter = (prop, asset) =>
@@ -46,6 +47,9 @@ function Page()
                     {doll.shoes !== "" &&
                         <img className="Doll" src={doll.shoes} alt="shoes" />
                     }
+                    {doll.gloves !== "" &&
+                        <img className='Doll' src={doll.gloves} alt="gloves" />
+                    } 
                     <img className='Doll' src={doll.dress} alt="dress" />
                     <img className='Doll' src={doll.eyes} alt="eyes" />
                     <img className='Doll' src={doll.brows} alt="brows" />
