@@ -1,6 +1,6 @@
 .Selection-Button-Container {
     display: flex;
-    transform: scale(15%);
+    transform: scale(16%);
     transform-origin: top left;
 }
 
@@ -20,7 +20,31 @@
     width: 442px;
     transform: scale(20.26%);
     transform-origin: top left;
+    border: 3px solid black;
+}
+
+.RemoveGlasses {
+    height: 300px;
+    width: 300px;
+    transform: scale(20.26%);
+    transform-origin: top left;
+    border: 4px solid black;
+}
+
+.RemoveGloves {
+    height: 440px;
+    width: 440px;
+    transform: scale(20.26%);
+    transform-origin: top left;
     border: 2px solid black;
+}
+
+.RemoveNecklace {
+    height: 504px;
+    width: 504px;
+    transform: scale(20.26%);
+    transform-origin: top left;
+    border: 5px solid black;
 }
 
 .NextButton {
@@ -32,4 +56,15 @@
 .Credits {
     position: absolute;
     left: 25px;
+}
+
+.Butterfly-Moth {
+    height: 1280px;
+    width: 1770px;
+    object-fit: none;
+    object-position: 50% 8%;
+    transform: scale(16%) rotate(-15deg);
+    transform-origin: top left;
+    margin-left: 460px;
+    margin-top: 40px;
 }

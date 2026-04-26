@@ -30,9 +30,14 @@
 .Item-Option {
     position: absolute;
     left: 283.575px;
-    width: 800px;
+    width: 830px;
     height: 712.5px;
     border: 2px solid black;
+}
+
+.Face-Selection-Container{
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 .Image {
@@ -137,8 +142,8 @@ maybe i can make this set overall larger view */
 }
 
 .Short-Dress-Option {
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 60px;
+    margin-left: 35px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -160,7 +165,7 @@ maybe i can make this set overall larger view */
 
 .Medium-Dress-Option {
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 150px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -199,11 +204,12 @@ maybe i can make this set overall larger view */
 
 .Medium-Dress-Image {
     height: 325px;
-    width: 250px;
+    width: 200px;
 }
 
 .Long-Dress-Option {
-    margin-top: 60px;
+    margin-top: 135px;
+    margin-left: 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -225,8 +231,8 @@ maybe i can make this set overall larger view */
 
 .Hair-Container {
     position: relative;
-    left: 45px;
-    top: 30px;
+    left: 80px;
+    top: 60px;
     width: 665px;
     border: 2px solid black;
 }
@@ -329,11 +335,140 @@ maybe i can make this set overall larger view */
     width: 130px;
 }
 
+.Glasses-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 275px;
+    margin-top: 90px;
+    width: 400px;
+}
+
+.Glasses {
+    height: 120px;
+    width: 250px;
+    object-fit: none;
+    object-position: 49.25% 13%;
+    transform: scale(50%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Glasses-Image {
+    width: 150px;
+    height: 100px;
+}
+
+.Necklace-Image {
+    width: 110px;
+    height: 110px;
+}
+
+.Necklace-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-top: 140px;
+    width: 600px;
+}
+
+.Short-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 24%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.ChokerwPendent-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 22%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Choker-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 21%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Thin-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 22%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Long-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 30.5%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Medium-Necklace {
+    height: 170px;
+    width: 170px;
+    object-fit: none;
+    object-position: 49% 26%;
+    transform: scale(60%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Gloves-Option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: 125px;
+    width: 600px;
+}
+
+.Gloves {
+    height: 450px;
+    width: 860px;
+    object-fit: none;
+    object-position: 49% 44%;
+    transform: scale(20%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Long-Gloves {
+    height: 750px;
+    width: 860px;
+    object-fit: none;
+    object-position: 49% 35%;
+    transform: scale(20%);
+    transform-origin: top left;
+    border: 2px solid black;
+}
+
+.Gloves-Image {
+    width: 200px;
+    height: 100px;
+}
+
 .Background-Option {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 115px;
     margin-top: 90px;
     width: 600px;
 }

@@ -25,7 +25,6 @@ const Dress = (props) =>
             "assets/DollParts/Dresses/Dressblackfloral.PNG",
             "assets/DollParts/Dresses/Dress80sruffle.PNG",
             "assets/DollParts/Dresses/Dress80sgreen.PNG",
-            
         ],
         [
             "assets/DollParts/Dresses/Dressblackmaxisheer.PNG",
@@ -63,7 +62,7 @@ const Dress = (props) =>
     //hard coded page rendering - easy to add different classNames
     //structure like shoes
     return(
-        <div className='Dress-Container'>
+        <div>
             {/* short dresses */}
             {page === 0 && 
                 <div className='Short-Dress-Option'>

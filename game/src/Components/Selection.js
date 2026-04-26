@@ -9,9 +9,11 @@ import SelectionButton from './SelectionButtons';
 import Dress from './Dress';
 import Hair from './Hair';
 import Shoe from './Shoe';
-import Accessory from './Accessory';
+import Glasses from './Glasses';
+import Necklace from './Necklace';
+import Gloves from './Gloves';
 import Credits from './Credits';
-import Background from './background';
+import Background from './Background';
 
 const Selection = (props) =>
 {
@@ -20,6 +22,9 @@ const Selection = (props) =>
         "Hair": "assets/UI_elements/navigationButtons/hairButton.png",
         "Dresses": "assets/UI_elements/navigationButtons/dressButton.png",
         "Shoes": "assets/UI_elements/navigationButtons/shoeButton.png",
+        "Gloves": "assets/UI_elements/navigationButtons/gloveButton.png",
+        "Necklaces": "assets/UI_elements/navigationButtons/necklaceButton.png",
+        "Glasses": "assets/UI_elements/navigationButtons/glassesButton.png",
         "Background": "assets/UI_elements/navigationButtons/backgroundButton.png"
     }
 
@@ -42,13 +47,14 @@ const Selection = (props) =>
                 })}
             </div>
             {selection === "Face" && 
-                <div>
+                <div className='Face-Selection-Container'>
                     <Brow callback={updateCharacter}/>
                     <Eyes callback={updateCharacter}/>
                     <Nose callback={updateCharacter}/>
                     <Lip callback={updateCharacter}/>
                     <FaceDetail callback={updateCharacter}/>
                     <Tone callback={updateCharacter}/>
+                    <img className='Butterfly-Moth' src={"assets/UI_elements/Butterflies/LunaMoth.PNG"} alt={"lunaMoth"} />
                 </div>
             }
             {selection === "Hair" && 
@@ -64,6 +70,21 @@ const Selection = (props) =>
             {selection === "Shoes" &&
                 <div>
                     <Shoe callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Glasses" &&
+                <div>
+                    <Glasses callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Necklaces" &&
+                <div>
+                    <Necklace callback={updateCharacter}/>
+                </div>
+            }
+            {selection === "Gloves" &&
+                <div>
+                    <Gloves callback={updateCharacter}/>
                 </div>
             }
             {selection === "Background" &&
