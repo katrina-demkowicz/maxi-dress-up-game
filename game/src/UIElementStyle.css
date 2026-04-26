@@ -49,3 +49,14 @@
     position: absolute;
     left: 25px;
 }
+
+.Butterfly-Moth {
+    height: 1280px;
+    width: 1770px;
+    object-fit: none;
+    object-position: 50% 8%;
+    transform: scale(16%) rotate(-15deg);
+    transform-origin: top left;
+    margin-left: 460px;
+    margin-top: 40px;
+}

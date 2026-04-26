@@ -53,6 +53,7 @@ const Selection = (props) =>
                     <Lip callback={updateCharacter}/>
                     <FaceDetail callback={updateCharacter}/>
                     <Tone callback={updateCharacter}/>
+                    <img className='Butterfly-Moth' src={"/assets/UI_elements/Butterflies/LunaMoth.PNG"} alt={"lunaMoth"} ></img>
                 </div>
             }
             {selection === "Hair" && 
