@@ -62,7 +62,7 @@ const Dress = (props) =>
     //hard coded page rendering - easy to add different classNames
     //structure like shoes
     return(
-        <div className='Dress-Container'>
+        <div>
             {/* short dresses */}
             {page === 0 && 
                 <div className='Short-Dress-Option'>
