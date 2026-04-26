@@ -338,23 +338,23 @@ maybe i can make this set overall larger view */
 .Glasses-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 220px;
-    margin-top: 80px;
-    width: 600px;
+    margin-left: 275px;
+    margin-top: 90px;
+    width: 400px;
 }
 
 .Glasses {
-    height: 125px;
-    width: 300px;
+    height: 120px;
+    width: 250px;
     object-fit: none;
-    object-position: 50% 13%;
-    transform: scale(60%);
+    object-position: 49% 13%;
+    transform: scale(50%);
     transform-origin: top left;
     border: 2px solid black;
 }
 
 .Glasses-Image {
-    width: 200.69px;
+    width: 150px;
     height: 100px;
 }
 
