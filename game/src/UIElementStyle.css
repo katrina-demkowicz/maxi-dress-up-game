@@ -4,6 +4,15 @@
     transform-origin: top left;
 }
 
+.Hair-Button-Container {
+    display: flex;
+    position: relative;
+    transform: scale(15%);
+    transform-origin: top left;
+    left: 87px;
+    top: 20px;
+}
+
 .Selection-Button-Image {
     height: 30px;
 }
