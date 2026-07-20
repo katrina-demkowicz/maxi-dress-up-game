@@ -1,7 +1,7 @@
 .Game {
     font-size: 20;
     display: flex;
-    background-color: rgba(112, 135, 181, 0.941);
+    background-color: rgba(160, 184, 232, 0.941);
     justify-content: center;
     align-items: center;
     height: 100vh;
