@@ -56,10 +56,24 @@
     border: 5px solid black;
 }
 
-.NextButton {
+.LeftButton {
     position: absolute;
+    height: 30px;
     left: 25px;
     bottom: 15px;
+    transform: scale(16%);
+    right: 800px;
+    bottom: 30px;
+}
+
+.RightButton {
+    position: absolute;
+    height: 30px;
+    left: 50px;
+    bottom: 15px;
+    transform: scale(16%);
+    left: 425px;
+    bottom: 30px;
 }
 
 .Credits {
