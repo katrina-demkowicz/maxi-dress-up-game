@@ -1,8 +1,10 @@
 .Game {
     font-size: 20;
     display: flex;
-    width: 1086px;
-    background-color: white;
+    background-color: rgba(160, 184, 232, 0.941);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .Doll-Container {
@@ -10,6 +12,8 @@
     height: 712.5px;
     border: 2px solid black;
     position: relative;
+    overflow: hidden;
+    background-color: white;
 }
 
 .Background-Container {
@@ -28,11 +32,12 @@
 }
 
 .Item-Option {
-    position: absolute;
-    left: 283.575px;
+    position: relative;
     width: 830px;
     height: 712.5px;
     border: 2px solid black;
+    border-left: none;
+    background-color: white;
 }
 
 .Face-Selection-Container{
@@ -165,7 +170,7 @@ maybe i can make this set overall larger view */
 
 .Medium-Dress-Option {
     margin-top: 15px;
-    margin-left: 150px;
+    margin-left: 157px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -233,7 +238,8 @@ maybe i can make this set overall larger view */
     position: relative;
     left: 80px;
     top: 60px;
-    width: 665px;
+    width: 662px;
+    height: 529px;
     border: 2px solid black;
 }
 

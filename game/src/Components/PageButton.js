@@ -19,14 +19,18 @@ const PageButton = (props) =>
     }
 
     return(
-        <div className='NextButton'>
+        <div>
             {currentPage !== 0 &&
-                <button onClick={pageLeft}>previous</button>
+                <div className='LeftButton'>
+                    <img src="assets/UI_elements/ButtonLeft.png" alt="left" onClick={pageLeft}/>
+                </div>  
             }
             {currentPage !== props.pageLength &&
-                <button onClick={pageRight}>next</button>
+                <div className='RightButton'>
+                    <img src="assets/UI_elements/ButtonRight.png" alt="rught" onClick={pageRight}/>
+                </div>
             }
-        </div>
+        </div>        
     )
 }
 
