@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SelectionButton from './SelectionButtons';
 
 const Hair = (props) =>
 {
@@ -115,6 +116,14 @@ const Hair = (props) =>
         ]
     }
 
+    const buttons = {        
+        "Black": "assets/UI_elements/hairButtons/ButtonBlack.png",
+        "Brown": "assets/UI_elements/hairButtons/ButtonBrown.png",
+        "Olive": "assets/UI_elements/hairButtons/ButtonOlive.png",
+        "Red": "assets/UI_elements/hairButtons/ButtonGinger.png",
+        "Blonde": "assets/UI_elements/hairButtons/ButtonBlonde.png"
+    }
+
     const [color, setColor] = useState("Brown")
 
     const changeColor = (newColor) => {
@@ -171,11 +180,11 @@ const Hair = (props) =>
                 )}
                 </div>
             }
-            <button onClick={() => changeColor("Black")}>Black</button>
-            <button onClick={() => changeColor("Brown")}>Brown</button>
-            <button onClick={() => changeColor("Olive")}>Olive</button>
-            <button onClick={() => changeColor("Red")}>Red</button>
-            <button onClick={() => changeColor("Blonde")}>Blonde</button>
+            <div className='Hair-Button-Container'>
+                {Object.entries(buttons).map(([buttonName, filepath]) => {
+                    return (<SelectionButton name={buttonName} source={filepath} callback={() => changeColor(buttonName)} />)
+                })}
+            </div>
         </div>
     )
 }
