@@ -14,6 +14,7 @@
     position: relative;
     overflow: hidden;
     background-color: white;
+    flex-shrink: 0;
 }
 
 .Background-Container {
@@ -38,6 +39,7 @@
     border: 2px solid black;
     border-left: none;
     background-color: white;
+    flex-shrink: 0;
 }
 
 .Face-Selection-Container{
