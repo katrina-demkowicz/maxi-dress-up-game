@@ -4,6 +4,15 @@
     transform-origin: top left;
 }
 
+.Download-Button-Container {
+    display: flex;
+    transform: scale(16%);
+    transform-origin: top left;
+    position: relative;
+    top: 40px;
+    left: 271px;
+}
+
 .Hair-Button-Container {
     display: flex;
     position: relative;
