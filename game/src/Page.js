@@ -9,17 +9,17 @@ function Page()
     const [doll, setDoll]= useState({
         "background": "",
         "body": "assets/DollParts/Body/Skin5.PNG",
+        "shoes": "",
+        "gloves": "",
+        "dress": "assets/DollParts/Dresses/Dressstarter.PNG",
         "eyes": "assets/DollParts/Eyes/EyesKimiko.PNG",
         "brows": "assets/DollParts/Eyebrows/BrowsLydia.PNG",
         "nose": "assets/DollParts/Noses/NoseKimiko.PNG",
         "lips": "assets/DollParts/Lips/Lipsbrown.PNG",
         "faceDetails": "",
         "necklace": "",
-        "dress": "assets/DollParts/Dresses/Dressstarter.PNG",
-        "shoes": "",
         "hair": "assets/DollParts/Hair/TheThelma/ThelmaGinger.PNG",
-        "glasses": "",
-        "gloves": ""
+        "glasses": ""
     });
 
     const updateCharacter = (prop, asset) =>
@@ -55,7 +55,6 @@ function Page()
                     <img className='Doll' src={doll.brows} alt="brows" />
                     <img className='Doll' src={doll.nose} alt="nose" />
                     <img className='Doll' src={doll.lips} alt="lips" />
-                    <img className='Doll' src={doll.hair} alt="hair" />
                     {/* empty string attributes */}
                     {doll.faceDetails !== "" &&
                         <img className='Doll' src={doll.faceDetails} alt="face details" />
