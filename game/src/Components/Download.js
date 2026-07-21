@@ -38,7 +38,7 @@ const Download = (props) =>
 
 
     return(
-        <div className='Selection-Button-Image'>
+        <div className='Selection-Button-Image' style={{left: '150px'}}>
             <img src={props.source} alt={props.name} onClick={handleDownload}/>
         </div>
     )

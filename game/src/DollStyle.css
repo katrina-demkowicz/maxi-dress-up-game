@@ -34,7 +34,7 @@
 
 .Item-Option {
     position: relative;
-    width: 830px;
+    width: 935px;
     height: 712.5px;
     border: 2px solid black;
     border-left: none;
@@ -43,7 +43,7 @@
 }
 
 .Face-Selection-Container{
-    margin-left: 25px;
+    margin-left: 85px;
     margin-top: 15px;
 }
 
@@ -113,9 +113,6 @@
     height: 57.69px;
 }
 
-/* to have details line up with the rest of the sets, hardcode margin.
-will find a better solution.
-maybe i can make this set overall larger view */
 .FaceDetail-Option {
     margin-left: -62px ;
     display: flex;
@@ -150,7 +147,7 @@ maybe i can make this set overall larger view */
 
 .Short-Dress-Option {
     margin-top: 60px;
-    margin-left: 35px;
+    margin-left: 90px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -172,7 +169,7 @@ maybe i can make this set overall larger view */
 
 .Medium-Dress-Option {
     margin-top: 15px;
-    margin-left: 157px;
+    margin-left: 210px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -216,7 +213,7 @@ maybe i can make this set overall larger view */
 
 .Long-Dress-Option {
     margin-top: 135px;
-    margin-left: 15px;
+    margin-left: 70px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -238,8 +235,8 @@ maybe i can make this set overall larger view */
 
 .Hair-Container {
     position: relative;
-    left: 80px;
-    top: 60px;
+    left: 135px;
+    top: 50px;
     width: 662px;
     height: 529px;
     border: 2px solid black;
@@ -269,12 +266,17 @@ maybe i can make this set overall larger view */
 .Shoe-Option {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    width: 800px;
+    left: 65px;
 }
 
 .Short-Shoe-Option {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    position: relative;
+    left: 65px;
     width: 600px;
 }
 
@@ -346,7 +348,7 @@ maybe i can make this set overall larger view */
 .Glasses-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 275px;
+    margin-left: 325px;
     margin-top: 90px;
     width: 400px;
 }
@@ -374,7 +376,7 @@ maybe i can make this set overall larger view */
 .Necklace-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 140px;
+    margin-left: 195px;
     margin-top: 140px;
     width: 600px;
 }
@@ -442,8 +444,8 @@ maybe i can make this set overall larger view */
 .Gloves-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 130px;
-    margin-top: 125px;
+    margin-left: 180px;
+    margin-top: 110px;
     width: 600px;
 }
 
@@ -476,7 +478,7 @@ maybe i can make this set overall larger view */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 115px;
+    margin-left: 165px;
     margin-top: 90px;
     width: 600px;
 }
