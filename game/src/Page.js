@@ -68,7 +68,7 @@ function Page()
                         <img className='Doll' src={doll.glasses} alt="glasses" />
                     }  
                 </div>
-                <Selection callback={updateCharacter}/>
+                <Selection doll={doll} callback={updateCharacter}/>
             </div>
         )
     }
