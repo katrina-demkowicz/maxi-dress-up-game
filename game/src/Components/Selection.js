@@ -14,6 +14,7 @@ import Necklace from './Necklace';
 import Gloves from './Gloves';
 import Credits from './Credits';
 import Background from './Background';
+import Download from './Download';
 
 const Selection = (props) =>
 {
@@ -25,7 +26,7 @@ const Selection = (props) =>
         "Gloves": "assets/UI_elements/navigationButtons/gloveButton.png",
         "Necklaces": "assets/UI_elements/navigationButtons/necklaceButton.png",
         "Glasses": "assets/UI_elements/navigationButtons/glassesButton.png",
-        "Background": "assets/UI_elements/navigationButtons/backgroundButton.png"
+        "Background": "assets/UI_elements/navigationButtons/backgroundButton.png", 
     }
 
     const [selection, setSelection] = useState("Face")
@@ -45,6 +46,7 @@ const Selection = (props) =>
                 {Object.entries(buttons).map(([buttonName, filepath]) => {
                     return (<SelectionButton name={buttonName} source={filepath} callback={() => updateSelection(buttonName)} />)
                 })}
+                <Download name={"Download"} source="assets/UI_elements/ButtonDownload.png" doll={props.doll}/>
             </div>
             {selection === "Face" && 
                 <div className='Face-Selection-Container'>
