@@ -14,7 +14,6 @@ import Necklace from './Necklace';
 import Gloves from './Gloves';
 import Credits from './Credits';
 import Background from './Background';
-import Download from './Download';
 
 const Selection = (props) =>
 {
@@ -46,7 +45,6 @@ const Selection = (props) =>
                 {Object.entries(buttons).map(([buttonName, filepath]) => {
                     return (<SelectionButton name={buttonName} source={filepath} callback={() => updateSelection(buttonName)} />)
                 })}
-                <Download name={"Download"} source="assets/UI_elements/ButtonDownload.png" doll={props.doll}/>
             </div>
             {selection === "Face" && 
                 <div className='Face-Selection-Container'>
@@ -91,7 +89,7 @@ const Selection = (props) =>
             }
             {selection === "Background" &&
                 <div>
-                    <Background callback={updateCharacter}/>
+                    <Background doll={props.doll} callback={updateCharacter}/>
                 </div>
             }
             {selection === "Credits" &&

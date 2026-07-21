@@ -1,3 +1,5 @@
+import Download from './Download';
+
 const Background = (props) => 
 {
 
@@ -49,6 +51,9 @@ const Background = (props) =>
                 return (<div className='Background-Image' key={i}><img className='Background' src={background[1]} alt={background} key={i} onClick={() => saveChange(background[0])} ></img></div>)
             })}
             <div className='Background-Image'><img className='RemoveBackground'  src={"assets/UI_elements/black_x.png"} alt={"remove background"} onClick={remove} ></img></div>
+            <div className='Download-Button-Container'>
+                <Download name={"Download"} source="assets/UI_elements/ButtonDownload.png" doll={props.doll}/>
+            </div>
         </div>
     )
 }

@@ -1,7 +1,16 @@
 .Selection-Button-Container {
     display: flex;
-    transform: scale(15.6%);
+    transform: scale(16%);
     transform-origin: top left;
+}
+
+.Download-Button-Container {
+    display: flex;
+    transform: scale(16%);
+    transform-origin: top left;
+    position: relative;
+    top: 40px;
+    left: 271px;
 }
 
 .Hair-Button-Container {
@@ -14,7 +23,6 @@
 }
 
 .Selection-Button-Image {
-    position: relative;
     height: 30px;
 }
 
@@ -63,7 +71,7 @@
     left: 25px;
     bottom: 15px;
     transform: scale(16%);
-    right: 885px;
+    right: 800px;
     bottom: 30px;
 }
 
@@ -73,7 +81,7 @@
     left: 50px;
     bottom: 15px;
     transform: scale(16%);
-    left: 525px;
+    left: 425px;
     bottom: 30px;
 }
 

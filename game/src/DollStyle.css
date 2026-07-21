@@ -34,7 +34,7 @@
 
 .Item-Option {
     position: relative;
-    width: 935px;
+    width: 830px;
     height: 712.5px;
     border: 2px solid black;
     border-left: none;
@@ -43,7 +43,7 @@
 }
 
 .Face-Selection-Container{
-    margin-left: 85px;
+    margin-left: 25px;
     margin-top: 15px;
 }
 
@@ -113,6 +113,9 @@
     height: 57.69px;
 }
 
+/* to have details line up with the rest of the sets, hardcode margin.
+will find a better solution.
+maybe i can make this set overall larger view */
 .FaceDetail-Option {
     margin-left: -62px ;
     display: flex;
@@ -147,7 +150,7 @@
 
 .Short-Dress-Option {
     margin-top: 60px;
-    margin-left: 90px;
+    margin-left: 35px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -169,7 +172,7 @@
 
 .Medium-Dress-Option {
     margin-top: 15px;
-    margin-left: 210px;
+    margin-left: 157px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -213,7 +216,7 @@
 
 .Long-Dress-Option {
     margin-top: 135px;
-    margin-left: 70px;
+    margin-left: 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -235,8 +238,8 @@
 
 .Hair-Container {
     position: relative;
-    left: 135px;
-    top: 50px;
+    left: 80px;
+    top: 60px;
     width: 662px;
     height: 529px;
     border: 2px solid black;
@@ -267,17 +270,15 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    width: 800px;
-    left: 65px;
+    left: 15px;
 }
 
 .Short-Shoe-Option {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-    position: relative;
-    left: 65px;
     width: 600px;
+    margin-left: 20px;
 }
 
 .Tall-Boot {
@@ -348,7 +349,7 @@
 .Glasses-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 325px;
+    margin-left: 275px;
     margin-top: 90px;
     width: 400px;
 }
@@ -376,7 +377,7 @@
 .Necklace-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 195px;
+    margin-left: 140px;
     margin-top: 140px;
     width: 600px;
 }
@@ -444,8 +445,8 @@
 .Gloves-Option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 180px;
-    margin-top: 110px;
+    margin-left: 130px;
+    margin-top: 125px;
     width: 600px;
 }
 
@@ -478,7 +479,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 165px;
+    margin-left: 115px;
     margin-top: 90px;
     width: 600px;
 }
